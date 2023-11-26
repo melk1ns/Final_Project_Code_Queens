@@ -1,0 +1,24 @@
+@import "utils/placeholders";
+@import "utils/variables";
+
+.container {
+  width: 343px;
+  margin: 0 auto;
+}
+
+.hidden-titles {
+  display: none;
+}
+
+@media (min-width: 768px) {
+  .container {
+    width: 704px;
+  }
+}
+
+
+@media (min-width: 1440px) {
+  .container {
+    width: 1320px;
+  }
+}
