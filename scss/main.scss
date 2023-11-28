@@ -1,6 +1,11 @@
 @import "utils/placeholders";
 @import "utils/variables";
 
+* {
+  box-sizing: border-box;
+  font-family: "Roboto", sans-serif;
+}
+
 .hidden-titles {
   display: none;
 }
@@ -23,7 +28,7 @@
     padding: 0;
     width: 1096px;
   }
-  
+
   .container-large {
     width: 1320px;
   }
