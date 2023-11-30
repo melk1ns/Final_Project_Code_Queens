@@ -1,0 +1,129 @@
+.container {
+  width: 100vw !important;
+}
+.about-us {
+  height: 1383px;
+  &__content {
+    background: $backgroundColor;
+    height: 983px;
+  }
+  &__text-container {
+    width: 343px;
+    height: 855px;
+    margin: 0 auto;
+    padding-top: 64px;
+  }
+  &__logo {
+    display: flex;
+
+    &--text {
+      color: $primaryColor;
+      margin-left: 20px;
+      @extend %subtitle-font;
+    }
+  }
+  &__title {
+    color: $primaryColor;
+    @extend %title-font;
+    font-size: 32px;
+    line-height: 42px;
+    text-transform: uppercase;
+    margin-top: 30px;
+  }
+  &__subtitle {
+    color: $primaryColor;
+    font-size: 18px;
+    @extend %subtitle-font;
+    line-height: 24px;
+    margin-top: 30px;
+  }
+  &__item {
+    margin: 0 auto;
+    width: 170px;
+    margin-top: 30px;
+
+    &--main {
+      margin: 0 auto;
+      color: $primaryColor;
+      text-align: center;
+      @extend %title-font;
+      font-size: 50px;
+      line-height: 75px;
+      text-transform: uppercase;
+      width: 170px;
+      height: 75px;
+    }
+    &--minor {
+      color: $primaryColor;
+      text-align: center;
+      font-size: 16px;
+      @extend %subtitle-font;
+      line-height: 24px;
+      margin-top: 14px;
+    }
+  }
+  &__img {
+    @extend %flex;
+    margin-top: 64px;
+  }
+}
+
+@media (min-width: 768px) {
+  .about-us {
+    background: none;
+    &__content {
+      height: 499px;
+      width: 704px;
+      margin: 0 auto;
+    }
+    &__text-container {
+      width: 576px;
+    }
+    &__title,
+    &__subtitle {
+      width: 576px;
+    }
+    &__items {
+      display: flex;
+      flex-direction: row;
+    }
+    &__item:first-child {
+      margin-right: 33px;
+    }
+    &__item:last-child {
+      margin-left: 33px;
+    }
+    &__img {
+      margin-top: 30px;
+    }
+  }
+}
+
+@media (min-width: 1440px) {
+  .about-us {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    &__content {
+      width: 760px;
+      height: 500px;
+      margin-top: 20px;
+    }
+    &__text-container,
+    &__title,
+    &__subtitle {
+      width: 622px;
+    }
+    &__item:first-child {
+      margin-right: 56px;
+    }
+    &__item:last-child {
+      margin-left: 56px;
+    }
+    &__img {
+      height: 540px;
+      margin-left: 24px;
+      margin-top: 0;
+    }
+  }
+}

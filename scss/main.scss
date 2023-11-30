@@ -1,6 +1,8 @@
 @import "utils/placeholders";
 @import "utils/variables";
 
+@import "components/about-us";
+
 .container {
   width: 343px;
   margin: 0 auto;
@@ -15,7 +17,6 @@
     width: 704px;
   }
 }
-
 
 @media (min-width: 1440px) {
   .container {
