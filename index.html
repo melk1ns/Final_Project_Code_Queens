@@ -1,19 +1,61 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Minimal</title>
-    <link rel="icon" type="image/x-icon" href="./src/icons/favicon.ico" >
-    <link rel="preconnect" href="https://fonts.googleapis.com">
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Playfair+Display&family=Roboto:wght@400;700&display=swap" rel="stylesheet">
-    <link rel="stylesheet" href="css/reset.css">
-    <link rel="stylesheet" href="css/main.css">
-</head>
-<body>
-    <header></header>
-    <main></main>
-    <footer></footer>
-</body>
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Minimal</title>
+        <link rel="icon" type="image/x-icon" href="./src/icons/favicon.ico" >
+        <link rel="preconnect" href="https://fonts.googleapis.com">
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link href="https://fonts.googleapis.com/css2?family=Playfair+Display&family=Roboto:wght@400;700&display=swap" rel="stylesheet">
+        <link rel="stylesheet" href="css/reset.css">
+        <link rel="stylesheet" href="css/main.css">
+    </head>
+    <body>
+        <header class="header">
+            <div class="container container-large header__block" >
+                <svg class="logo-mob" width="100" height="16" viewBox="0 0 100 16">
+                    <use xlink:href="./src/icons/logo-mob.svg#logo-mob"></use>
+                </svg>
+                <svg class="logo-desk" width="128" height="17" viewBox="0 0 128 17">
+                    <use xlink:href="./src/icons/logo-desk.svg#logo-desk"></use>
+                </svg>
+                <nav class="header-nav">
+                    <ul class="header-nav__list">
+                        <li><a href="#" class="header-nav__item">About us</a></li>
+                        <li><a href="#" class="header-nav__item">Our products</a></li>
+                        <li><a href="#" class="header-nav__item">Prices</a></li>
+                        <li><a href="#" class="header-nav__item">Bestsellers</a></li>
+                        <li><a href="#" class="header-nav__item">Reviews</a></li>
+                        <li><a href="#" class="header-nav__item">Contacts</a></li>
+                    </ul>
+                </nav>
+                <div class="header-menu">
+                    <input type="checkbox" id="header-menu__toggle">
+                    <label class="header-menu__btn" for="header-menu__toggle">
+                        <div class="header-menu__linebox">
+                            <span class="header-menu__line"></span>
+                            <span class="header-menu__line"></span>
+                            <span class="header-menu__line"></span>
+                            <span class="header-menu__line"></span>
+                        </div>
+                    </label>
+                    <div class="burger-menu__block">
+                        <ul class="burger-menu__list">
+                            <li><a href="#" class="burger-menu__item">About us</a></li>
+                            <li><a href="#" class="burger-menu__item">Our products</a></li>
+                            <li><a href="#" class="burger-menu__item">Prices</a></li>
+                            <li><a href="#" class="burger-menu__item">Bestsellers</a></li>
+                            <li><a href="#" class="burger-menu__item">Reviews</a></li>
+                            <li><a href="#" class="burger-menu__item">Contacts</a></li>
+                        </ul>
+                    </div>
+                </div>  
+            </div>
+        </header>
+        <main>
+           
+        </main>
+        <footer></footer>
+    </body>
 </html>
