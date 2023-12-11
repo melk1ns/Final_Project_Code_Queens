@@ -14,28 +14,16 @@
     padding-left: 32px;
     padding-right: 32px;
   }
+}
 
+@media (min-width: 1440px) {
   .container {
     padding: 0;
     margin: 0 auto;
     width: 1096px;
 
-    @media (min-width: 768px) {
-      .container {
-        margin-left: 32px;
-        margin-right: 32px;
-      }
-    }
-
-    @media (min-width: 1440px) {
-      .container {
-        margin: 0 auto;
-        width: 1096px;
-
-        &-large {
-          width: 1320px;
-        }
-      }
+    &-large {
+      width: 1320px;
     }
   }
 }
