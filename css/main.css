@@ -5,7 +5,7 @@
   flex-direction: column;
 }
 
-.about-us__item--main, .about-us__title {
+.about-us .item__number, .about-us__title {
   font-family: Roboto;
   font-size: 32px;
   font-style: normal;
@@ -14,19 +14,16 @@
   text-transform: uppercase;
 }
 
-.about-us__item--minor, .about-us__subtitle, .about-us__logo--text {
+.about-us .item__subtitle, .about-us__subtitle, .about-us__text {
   font-family: Roboto;
   font-size: 18px;
   font-style: normal;
   font-weight: 400;
 }
 
-.container {
-  width: 100vw !important;
-}
-
 .about-us {
   height: 1383px;
+  width: 100vw;
 }
 .about-us__content {
   background: #F7FAFF;
@@ -41,7 +38,7 @@
 .about-us__logo {
   display: flex;
 }
-.about-us__logo--text {
+.about-us__text {
   color: #0A224A;
   margin-left: 20px;
 }
@@ -63,7 +60,7 @@
   width: 170px;
   margin-top: 30px;
 }
-.about-us__item--main {
+.about-us .item__number {
   margin: 0 auto;
   color: #0A224A;
   text-align: center;
@@ -73,7 +70,7 @@
   width: 170px;
   height: 75px;
 }
-.about-us__item--minor {
+.about-us .item__subtitle {
   color: #0A224A;
   text-align: center;
   font-size: 16px;
