@@ -1,14 +1,7 @@
 @import "utils/placeholders";
 @import "utils/variables";
 
-* {
-  box-sizing: border-box;
-  font-family: "Roboto", sans-serif;
-}
-
-.hidden-titles {
-  display: none;
-}
+@import "components/about-us";
 
 .container {
   width: 100%;
