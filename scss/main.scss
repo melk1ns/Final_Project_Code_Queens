@@ -6,20 +6,36 @@
 .container {
   width: 343px;
   margin: 0 auto;
-}
-
-.hidden-titles {
-  display: none;
-}
-
-@media (min-width: 768px) {
-  .container {
-    width: 704px;
+  * {
+    box-sizing: border-box;
+    font-family: "Roboto", sans-serif;
   }
-}
 
-@media (min-width: 1440px) {
+  .hidden-titles {
+    display: none;
+  }
+
   .container {
-    width: 1320px;
+    width: 100%;
+    margin-left: 16px;
+    margin-right: 16px;
+  }
+
+  @media (min-width: 768px) {
+    .container {
+      margin-left: 32px;
+      margin-right: 32px;
+    }
+  }
+
+  @media (min-width: 1440px) {
+    .container {
+      margin: 0 auto;
+      width: 1096px;
+
+      &-large {
+        width: 1320px;
+      }
+    }
   }
 }
