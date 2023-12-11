@@ -1,15 +1,15 @@
 .about-us {
   height: 1383px;
-  width: 100vw;
+  // width: 100vw;
   &__content {
     background: $backgroundColor;
-    height: 983px;
+    // height: 983px;
   }
   &__text-container {
     width: 343px;
-    height: 855px;
+    // height: 855px;
     margin: 0 auto;
-    padding-top: 64px;
+    padding: 64px 16px;
   }
   &__logo {
     display: flex;
@@ -27,7 +27,7 @@
     font-size: 32px;
     line-height: 42px;
     text-transform: uppercase;
-    margin-top: 30px;
+    margin-top: 36px;
   }
   &__subtitle {
     @extend %subtitle-font;
@@ -76,9 +76,10 @@
   .about-us {
     background: none;
     &__content {
+      // @extend %flex;
+
       height: 499px;
       width: 704px;
-      margin: 0 auto;
     }
     &__text-container {
       width: 576px;

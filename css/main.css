@@ -23,34 +23,31 @@
 
 .about-us {
   height: 1383px;
-  width: 100vw;
 }
 .about-us__content {
-  background: #F7FAFF;
-  height: 983px;
+  background: #f7faff;
 }
 .about-us__text-container {
   width: 343px;
-  height: 855px;
   margin: 0 auto;
-  padding-top: 64px;
+  padding: 64px 16px;
 }
 .about-us__logo {
   display: flex;
 }
 .about-us__text {
-  color: #0A224A;
+  color: #0a224a;
   margin-left: 20px;
 }
 .about-us__title {
-  color: #0A224A;
+  color: #0a224a;
   font-size: 32px;
   line-height: 42px;
   text-transform: uppercase;
-  margin-top: 30px;
+  margin-top: 36px;
 }
 .about-us__subtitle {
-  color: #0A224A;
+  color: #0a224a;
   font-size: 18px;
   line-height: 24px;
   margin-top: 30px;
@@ -62,7 +59,7 @@
 }
 .about-us .item__number {
   margin: 0 auto;
-  color: #0A224A;
+  color: #0a224a;
   text-align: center;
   font-size: 50px;
   line-height: 75px;
@@ -71,7 +68,7 @@
   height: 75px;
 }
 .about-us .item__subtitle {
-  color: #0A224A;
+  color: #0a224a;
   text-align: center;
   font-size: 16px;
   line-height: 24px;
@@ -88,7 +85,6 @@
   .about-us__content {
     height: 499px;
     width: 704px;
-    margin: 0 auto;
   }
   .about-us__text-container {
     width: 576px;
@@ -139,33 +135,31 @@
 .container {
   width: 343px;
   margin: 0 auto;
-* {
+}
+.container * {
   box-sizing: border-box;
   font-family: "Roboto", sans-serif;
 }
-
-.hidden-titles {
+.container .hidden-titles {
   display: none;
 }
-
-.container {
+.container .container {
   width: 100%;
   margin-left: 16px;
   margin-right: 16px;
 }
-
 @media (min-width: 768px) {
-  .container {
+  .container .container {
     margin-left: 32px;
     margin-right: 32px;
   }
 }
 @media (min-width: 1440px) {
-  .container {
+  .container .container {
     margin: 0 auto;
     width: 1096px;
   }
-  .container-large {
+  .container .container-large {
     width: 1320px;
   }
 }
