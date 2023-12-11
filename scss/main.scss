@@ -26,10 +26,11 @@
 @media (min-width: 1440px) {
   .container {
     padding: 0;
+    margin: 0 auto;
     width: 1096px;
-  }
 
-  .container-large {
-    width: 1320px;
+    &-large {
+      width: 1320px;
+    }
   }
 }
