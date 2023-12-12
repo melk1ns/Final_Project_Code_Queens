@@ -1,0 +1,79 @@
+  .products-title {
+font-family: Roboto;
+font-size: 32px;
+font-weight: 400;
+line-height: 45px;
+letter-spacing: 0em;
+text-align: center;
+color:$primaryColor ;
+position: relative;
+top: 20px;
+  }
+ 
+.carousel {
+ width: 343px;
+ padding-top: 50px;
+margin: 0 auto;   
+}
+
+@media (min-width:414px) {
+    .carousel2 {
+  visibility: hidden;
+    }
+    .carousel3 {
+   visibility: hidden;
+          }
+      }
+    
+
+.carousel2 {
+    width: 688px;
+    margin: 0 auto; 
+    gap:10px;  
+}
+.slick-prev:before {
+color: black;
+}
+.slick-next:before {
+  color: black;
+}
+
+
+@media (min-width:768px) {
+    .carousel2 {
+        visibility: visible;
+        width: 685px;
+        margin-top: 50px;
+          }
+    .carousel {
+        display: none;
+     }
+    }
+   
+    .carousel3 {
+        visibility: hidden;
+          }
+         
+@media (min-width:1440px) {
+    .carousel3 {
+  visibility: visible;
+  width: 1320px;
+  margin:0 auto;
+ margin-top: -120px;
+    }
+    .carousel2 {
+        visibility: hidden;
+        margin-top: -160px;
+          }
+}
+
+.text-minimalist {
+font-family: Roboto;
+font-size: 16px;
+font-weight: 400;
+line-height: 24px;
+letter-spacing: 0em;
+text-align: left;
+color: #0A224A;
+padding-top: 20px;
+}
