@@ -14,82 +14,87 @@
     <link rel="stylesheet" href="css/reset.css" />
     <link rel="stylesheet" href="css/main.css" />
   </head>
+
   <body>
     <header></header>
     <main>
-      <section class="container about-us">
-        <div class="about-us__content">
-          <div class="about-us__text-container">
-            <div class="about-us__logo">
-              <img
-                class="about-us__line"
-                src="./src/icons/line.svg"
-                alt="line"
-              />
-              <p class="about-us__text">About us</p>
-            </div>
-            <h2 class="about-us__title">
-              Our craftsmanship: creating unique handmade furniture
-            </h2>
-            <p class="about-us__subtitle">
-              Discover the inspiration behind our modern and minimalist designs,
-              and see how we bring them to life through our skilled
-              craftsmanship.
-            </p>
-            <div class="about-us__items">
-              <div class="about-us__item">
-                <p class="item__number">5+</p>
-                <p class="item__subtitle">
-                  Years of experience creating handcrafted furniture
+      <div class="about-us__wrraper">
+        <section class="about-us">
+          <div class="container-large about-us__background">
+            <div class="about-us__content">
+              <div class="about-us__text-container">
+                <div class="about-us__logo">
+                  <img
+                    class="about-us__line"
+                    src="./src/icons/line.svg"
+                    alt="line"
+                  />
+                  <p class="about-us__text">About us</p>
+                </div>
+                <h2 class="about-us__title">
+                  Our craftsmanship: creating unique handmade furniture
+                </h2>
+                <p class="about-us__subtitle">
+                  Discover the inspiration behind our modern and minimalist
+                  designs, and see how we bring them to life through our skilled
+                  craftsmanship.
                 </p>
-              </div>
-              <div class="about-us__item">
-                <p class="item__number">100%</p>
-                <p class="item__subtitle">
-                  Sustainably sourced materials used in all of our furniture
-                </p>
-              </div>
-              <div class="about-us__item">
-                <p class="item__number">500+</p>
-                <p class="item__subtitle">
-                  Unique furniture designs crafted by our skilled artisans
-                </p>
+                <div class="about-us__items">
+                  <div class="about-us__item">
+                    <p class="item__number">5+</p>
+                    <p class="item__subtitle">
+                      Years of experience creating handcrafted furniture
+                    </p>
+                  </div>
+                  <div class="about-us__item">
+                    <p class="item__number">100%</p>
+                    <p class="item__subtitle">
+                      Sustainably sourced materials used in all of our furniture
+                    </p>
+                  </div>
+                  <div class="about-us__item">
+                    <p class="item__number">500+</p>
+                    <p class="item__subtitle">
+                      Unique furniture designs crafted by our skilled artisans
+                    </p>
+                  </div>
+                </div>
               </div>
             </div>
           </div>
-        </div>
-        <picture class="about-us__img">
-          <!-- desktop -->
-          <source
-            srcset="
-              ./src/images/about-us-sofa-desk@1x.jpg 1x,
-              ./src/images/about-us-sofa-desk@2x.jpg 2x
-            "
-            media="(min-width: 1440px)"
-            type="image/jpeg"
-          />
-          <!-- tablet -->
+          <picture class="about-us__img">
+            <!-- desktop -->
+            <source
+              srcset="
+                ./src/images/about-us-sofa-desk@1x.jpg 1x,
+                ./src/images/about-us-sofa-desk@2x.jpg 2x
+              "
+              media="(min-width: 1440px)"
+              type="image/jpeg"
+            />
+            <!-- tablet -->
 
-          <source
-            srcset="
-              ./src/images/about-us-sofa-tab@1x.jpg 1x,
-              ./src/images/about-us-sofa-tab@2x.jpg 2x
-            "
-            media="(min-width: 768px)"
-            type="image/jpeg"
-          />
-          <!-- mobile -->
-          <source
-            srcset="
-              ./src/images/about-us-sofa-mob@1x.jpg 1x,
-              ./src/images/about-us-sofa-mob@2x.jpg 2x
-            "
-            media="(min-width: 300px)"
-            type="image/jpeg"
-          />
-          <img src="./src/images/about-us-sofa-mob@1x.jpg" alt="sofa" />
-        </picture>
-      </section>
+            <source
+              srcset="
+                ./src/images/about-us-sofa-tab@1x.jpg 1x,
+                ./src/images/about-us-sofa-tab@2x.jpg 2x
+              "
+              media="(min-width: 768px)"
+              type="image/jpeg"
+            />
+            <!-- mobile -->
+            <source
+              srcset="
+                ./src/images/about-us-sofa-mob@1x.jpg 1x,
+                ./src/images/about-us-sofa-mob@2x.jpg 2x
+              "
+              media="(min-width: 300px)"
+              type="image/jpeg"
+            />
+            <img src="./src/images/about-us-sofa-mob@1x.jpg" alt="sofa" />
+          </picture>
+        </section>
+      </div>
     </main>
     <footer></footer>
   </body>
