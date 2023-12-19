@@ -1,38 +1,5 @@
+@import "utils/global";
 @import "utils/placeholders";
 @import "utils/variables";
 
 @import "components/price-section";
-
-* {
-  box-sizing: border-box;
-  font-family: "Roboto", sans-serif;
-}
-
-.hidden-titles {
-  display: none;
-}
-
-.container {
-  width: 100%;
-  padding-left: 16px;
-  padding-right: 16px;
-}
-
-@media (min-width: 768px) {
-  .container {
-    padding-left: 32px;
-    padding-right: 32px;
-  }
-}
-
-@media (min-width: 1440px) {
-  .container {
-    padding: 0;
-    margin: 0 auto;
-    width: 1096px;
-
-    &-large {
-      width: 1320px;
-    }
-  }
-}
