@@ -1,8 +1,48 @@
-.burger-menu__list, .burger-menu__block, .header__block, .header {
+* {
+  box-sizing: border-box;
+  font-family: "Roboto", sans-serif;
+}
+
+.hidden-titles {
+  display: none;
+}
+
+.container {
+  width: 100%;
+  padding-left: 16px;
+  padding-right: 16px;
+}
+
+@media (min-width: 768px) {
+  .container {
+    padding-left: 32px;
+    padding-right: 32px;
+  }
+}
+@media (min-width: 1440px) {
+  .container {
+    padding: 0;
+    margin: 0 auto;
+    width: 1096px;
+  }
+  .container-large {
+    width: 1320px;
+  }
+}
+.price__item-text, .burger-menu__list, .burger-menu__block, .header__block, .header {
   display: flex;
   justify-content: center;
   align-items: center;
   flex-direction: column;
+}
+
+.price__item-title {
+  font-family: "Roboto", sans-serif;
+  font-size: 32px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: 45px;
+  text-transform: uppercase;
 }
 
 .burger-menu__item {
@@ -137,33 +177,62 @@
     display: none;
   }
 }
-* {
-  box-sizing: border-box;
+.price__item {
+  margin: 30px 0;
+}
+.price__item-line {
+  height: 1px;
+  border: none;
+  background: #0a224a;
+  margin: 0;
+}
+.price__item-text {
+  justify-content: space-between;
+  flex-direction: row;
+  color: #0a224a;
   font-family: "Roboto", sans-serif;
 }
-
-.hidden-titles {
-  display: none;
+.price__item-title {
+  position: relative;
+  font-size: 28px;
+  line-height: 42px;
+  transform: translateX(0);
+  transition: transform 1s ease-in-out;
 }
-
-.container {
-  width: 100%;
-  margin-left: 16px;
-  margin-right: 16px;
+.price__item-subtitle {
+  font-size: 16px;
+  font-style: normal;
+  font-weight: 700;
+  line-height: 24px;
+}
+.price__item-additional-line {
+  position: absolute;
+  display: block;
+  width: 0;
+  height: 3px;
+  background-color: #0a224a;
+  transition: width 1s ease-in-out;
+}
+.price__item:hover .price__item-additional-line {
+  width: 40px;
+}
+.price__item:hover .price__item-title {
+  transform: translateX(56px);
 }
 
 @media (min-width: 768px) {
-  .container {
-    margin-left: 32px;
-    margin-right: 32px;
+  .price__item-title {
+    font-size: 32px;
+    line-height: 45px;
   }
-}
-@media (min-width: 1440px) {
-  .container {
-    margin: 0 auto;
-    width: 1096px;
+  .price__item-subtitle {
+    font-size: 18px;
+    line-height: 27px;
   }
-  .container-large {
-    width: 1320px;
+  .price__item:hover .price__item-additional-line {
+    width: 50px;
+  }
+  .price__item:hover .price__item-title {
+    transform: translateX(72px);
   }
 }
