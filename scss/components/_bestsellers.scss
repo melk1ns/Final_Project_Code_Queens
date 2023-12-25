@@ -22,16 +22,16 @@
     color: $primaryColor;
     margin-bottom: 30px;
 
-    &-large {
+    &--large {
       height: 265px;
       margin-bottom: 30px;
     }
 
-    &-hidden {
+    &--hidden {
       display: none;
     }
 
-    &-custom {
+    &-base {
       margin-bottom: 0;
     }
 
@@ -56,14 +56,12 @@
 
 @media (min-width: 768px) {
   .bestsellers {
-    &__block {
-      &-cards {
-        max-width: 704px;
-        display: flex;
-        justify-content: space-between;
-        flex-direction: row;
-        flex-wrap: wrap;
-      }
+    &__block-cards {
+      max-width: 704px;
+      display: flex;
+      justify-content: space-between;
+      flex-direction: row;
+      flex-wrap: wrap;
     }
 
     &__title {
@@ -77,14 +75,14 @@
       height: 266px;
       margin-bottom: 0;
 
-      &-large {
+      &--large {
         display: block;
         width: 704px;
         height: 562px;
         margin-bottom: 32px;
       }
 
-      &-hidden {
+      &--hidden {
         margin-top: 32px;
         display: block;
       }
@@ -118,12 +116,12 @@
       width: 258px;
       margin-bottom: 0;
 
-      &-large {
+      &--large {
         width: 536px;
         margin-bottom: 0;
       }
 
-      &-hidden {
+      &--hidden {
         margin-top: 30px;
       }
     }
