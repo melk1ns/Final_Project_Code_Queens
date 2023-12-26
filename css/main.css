@@ -29,7 +29,7 @@
     width: 1320px;
   }
 }
-.price__item-text, .burger-menu__list, .burger-menu__block, .header__block, .header {
+.price__item-text, .burger-menu__list, .header__block, .header {
   display: flex;
   justify-content: center;
   align-items: center;
@@ -81,6 +81,78 @@
   border-radius: 24px;
 }
 
+input[type=checkbox]:checked ~ .burger-menu__block {
+  opacity: 1;
+}
+
+input[type=checkbox]:checked ~ label .header-menu__linebox .header-menu__line1 {
+  animation: line1 2s linear forwards alternate;
+}
+
+@keyframes line1 {
+  0% {
+    transform: translateY(10px);
+  }
+  100% {
+    transform: rotate(-45deg);
+  }
+}
+.header-menu__line1 {
+  transform-origin: center;
+}
+
+input[type=checkbox]:checked ~ label .header-menu__linebox .header-menu__line2 {
+  animation: line2 2s linear forwards alternate;
+}
+
+@keyframes line2 {
+  0% {
+    transform: translateY(0px);
+    opacity: 1;
+  }
+  50% {
+    opacity: 0.5;
+  }
+  100% {
+    transform: translateY(4px);
+    opacity: 0;
+    display: none;
+  }
+}
+input[type=checkbox]:checked ~ label .header-menu__linebox .header-menu__line3 {
+  animation: line3 2s linear forwards alternate;
+}
+
+@keyframes line3 {
+  0% {
+    transform: translateY(0px);
+    opacity: 1;
+  }
+  50% {
+    opacity: 0.5;
+  }
+  100% {
+    transform: translateY(-4px);
+    opacity: 0;
+    display: none;
+  }
+}
+input[type=checkbox]:checked ~ label .header-menu__linebox .header-menu__line4 {
+  animation: line4 2s linear forwards alternate;
+}
+
+@keyframes line4 {
+  0% {
+    transform: translateY(-10px);
+  }
+  100% {
+    transform: rotate(45deg);
+  }
+}
+.header-menu__line4 {
+  transform-origin: center;
+}
+
 #header-menu__toggle {
   display: none;
 }
@@ -119,7 +191,7 @@
     font-size: 18px;
     font-style: normal;
     font-weight: 400;
-    line-height: 27px; /* 150% */
+    line-height: 27px;
   }
   .header-menu {
     display: none;
@@ -132,15 +204,19 @@
   }
 }
 .burger-menu__block {
-  background-color: blue;
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+  background: #fff;
   position: fixed;
   bottom: 0;
   top: 0;
   right: 0;
   left: 0;
   margin-top: 88px;
-  transform: translateY(calc(-100% - 88px));
-  transition: transform 1s ease-in;
+  padding-top: 114px;
+  opacity: 0;
+  transition: opacity 0.5s ease-in-out;
 }
 .burger-menu__list {
   list-style: none;
@@ -161,6 +237,10 @@
 }
 
 @media (min-width: 768px) {
+  .burger-menu__block {
+    margin-top: 95px;
+    padding-top: 150px;
+  }
   .burger-menu__list {
     width: 120px;
   }
