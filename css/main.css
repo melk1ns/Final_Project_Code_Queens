@@ -86,7 +86,7 @@
   .form-newsletter {
     width: 536px;
   }
-  .img {
+  .img-newsletter {
     width: 704px;
     height: 396px;
   }
@@ -98,7 +98,7 @@
     flex-direction: row;
     gap: 100px;
   }
-  .img {
+  .img-newsletter {
     width: 460px;
     height: 410px;
   }
@@ -125,34 +125,30 @@
   border: 1px solid #B6B6B6;
 }
 
-input {
-  padding: 20px;
-}
-
 .input-container {
   position: relative;
+  margin-bottom: 20px;
 }
 
-.input-container input {
-  border: 1px solid #B6B6B6;
+input {
+  padding: 10px;
 }
 
-.input-container.success input {
-  border: 1px solid red;
+input:invalid {
+  border: 1px solid #E74A3B;
 }
 
 .input-container .validation-icon {
-  display: none;
   position: absolute;
-  top: 25px;
-  left: 90%;
+  top: 50%;
+  right: 10px;
   transform: translateY(-50%);
+  display: none;
 }
 
-.container-form {
-  gap: 20px;
-  display: flex;
-  flex-direction: column;
+.email-input:invalid + .validation-icon {
+  display: inline-block;
+  color: red;
 }
 
 .price__item {

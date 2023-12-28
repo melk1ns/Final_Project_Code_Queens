@@ -50,64 +50,40 @@
             <hr class="price__item-line">
         </section>
         <div class="container_newsletter">
-        <div  class="container-design">
+        <div  >
         <p class="title-newsletter">Newsletter</p>
         <div class="container-design">
         <p class="text-newsletter">Every week we will send you new designs and information about sales.</p>
-        <div class="container-form">
-            <form id="myForm1">
-              <div class="input-container">
-                <input type="text" id="combinedInput1" placeholder="Name" class="form-newsletter" required>
-                <div class="validation-icon">
-                  <img src="images\Vector (16).png" alt="Validation Icon">
+        <div >
+        <form >
+                <div class="input-container">
+                  <input type="text" placeholder="Name" class="form-newsletter" >
+                 
                 </div>
-              </div>
-            </form>
-             <form id="myForm2">
-              <div class="input-container">
-                <input type="text" id="combinedInput2" placeholder="E-mail" class="form-newsletter" required>
-                <div class="validation-icon">
-                  <img src="images\Vector (16).png" alt="Validation Icon">
+              </form>
+              <form>
+  
+                <div class="input-container">
+                  <input type="email" placeholder="E-mail" class="form-newsletter email-input" >
+                  <div class="validation-icon">
+                    <img src="images\error.png" alt="icon error"/>
+                  </div>
                 </div>
-              </div>
-            </form>
+            
+              </form>
           </div>
         <div class="container-checkbox">
         <input type="checkbox" class="checkbox"/>
         <p class="text-agree">Agree to subscribe to the newsletter</p>
       </div>
-        <button type="button" onclick="submitForm()" class="button-send">Send</button>
+        <button type="button"  class="button-send">Send</button>
       </div>
         </div>
-        <img src="images\product 7 (5).png" alt="photo-newsletter" class="img"/>
+        <img src="images\img-newsletter.png" alt="photo-newsletter" class="img-newsletter"/>
   </div>
  
     </main>
     <footer></footer>
-    <script>  
-    function submitForm() {
-        var inputElement1 = document.getElementById('combinedInput1');
-        var container1 = document.querySelector('#myForm1 .input-container');
-        var icon1 = document.querySelector('#myForm1 .validation-icon');
-    
-        var inputElement2 = document.getElementById('combinedInput2');
-        var container2 = document.querySelector('#myForm2 .input-container');
-        var icon2 = document.querySelector('#myForm2 .validation-icon');
-    
-        validateInput(inputElement1, container1, icon1);
-        validateInput(inputElement2, container2, icon2);
-      }
-    
-      function validateInput(inputElement, container, icon) {
-        if (inputElement.checkValidity()) {
-        
-          container.classList.add('success');
-          icon.style.display = 'inline-block'; 
-        } else {
-         
-          container.classList.remove('success');
-          icon.style.display = 'none';
-        }
-      }</script>
+  
 </body>
 </html>
