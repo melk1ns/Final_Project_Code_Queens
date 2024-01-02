@@ -61,7 +61,8 @@
 @media (min-width:768px) {
   .banner {
     background: none;
-    margin: 0 auto;
+    display: flex;
+    justify-content: center;
   }
 
   .banner .container-img img:first-child,
@@ -111,7 +112,7 @@
 
   .container-minimalist {
     flex-direction: row;
-    margin: 0 auto;
+   padding-top: 190px;
   }
 
   .container-bookshelf {
