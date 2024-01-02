@@ -6,8 +6,6 @@
   letter-spacing: 0em;
   text-align: center;
   color: #0a224a;
-  position: relative;
-  top: 20px;
 }
 
 .carousel {
@@ -16,52 +14,41 @@
   margin: 0 auto;
 }
 
-@media (min-width: 414px) {
-  .carousel2 {
-    visibility: hidden;
-  }
-  .carousel3 {
-    visibility: hidden;
-  }
+.carousel2 {
+  display: none;
 }
+
+.carousel3 {
+  display: none;
+}
+
 .carousel2 {
   width: 688px;
   margin: 0 auto;
   gap: 10px;
 }
 
-.slick-prev:before {
-  color: black;
-}
-
-.slick-next:before {
-  color: black;
-}
-
 @media (min-width: 768px) {
   .carousel2 {
-    visibility: visible;
+    display: block;
     width: 685px;
-    margin-top: 50px;
   }
   .carousel {
     display: none;
   }
 }
 .carousel3 {
-  visibility: hidden;
+  display: none;
 }
 
 @media (min-width: 1440px) {
   .carousel3 {
-    visibility: visible;
+    display: block;
     width: 1320px;
     margin: 0 auto;
-    margin-top: -120px;
   }
   .carousel2 {
-    visibility: hidden;
-    margin-top: -160px;
+    display: none;
   }
 }
 .text-minimalist {
@@ -71,7 +58,7 @@
   line-height: 24px;
   letter-spacing: 0em;
   text-align: left;
-  color: #0A224A;
+  color: #0a224a;
   padding-top: 20px;
 }
 
