@@ -1,3 +1,57 @@
+* {
+  box-sizing: border-box;
+  font-family: "Roboto", sans-serif;
+}
+
+.hidden-titles {
+  display: none;
+}
+
+.container {
+  width: 100%;
+  padding-left: 16px;
+  padding-right: 16px;
+}
+
+@media (min-width: 768px) {
+  .container {
+    padding-left: 32px;
+    padding-right: 32px;
+  }
+}
+@media (min-width: 1440px) {
+  .container {
+    padding: 0;
+    margin: 0 auto;
+    width: 1096px;
+  }
+  .container-large {
+    width: 1320px;
+  }
+}
+.bestsellers__block, .bestsellers, .price__item-text {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+}
+
+.bestsellers__title, .price__item-title {
+  font-family: "Roboto", sans-serif;
+  font-size: 32px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: 45px;
+  text-transform: uppercase;
+}
+
+.bestsellers__card-subtitle, .bestsellers__card-title {
+  font-family: "Roboto", sans-serif;
+  font-size: 18px;
+  font-style: normal;
+  font-weight: 400;
+}
+
 .banner {
   background-image: url("../images/product.png");
   background-size: cover;
@@ -106,60 +160,6 @@
     width: 300px;
   }
 }
-* {
-  box-sizing: border-box;
-  font-family: "Roboto", sans-serif;
-}
-
-.hidden-titles {
-  display: none;
-}
-
-.container {
-  width: 100%;
-  padding-left: 16px;
-  padding-right: 16px;
-}
-
-@media (min-width: 768px) {
-  .container {
-    padding-left: 32px;
-    padding-right: 32px;
-  }
-}
-@media (min-width: 1440px) {
-  .container {
-    padding: 0;
-    margin: 0 auto;
-    width: 1096px;
-  }
-  .container-large {
-    width: 1320px;
-  }
-}
-.bestsellers__block, .bestsellers, .price__item-text {
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  flex-direction: column;
-}
-
-.bestsellers__title, .price__item-title {
-  font-family: "Roboto", sans-serif;
-  font-size: 32px;
-  font-style: normal;
-  font-weight: 400;
-  line-height: 45px;
-  text-transform: uppercase;
-}
-
-.bestsellers__card-subtitle, .bestsellers__card-title {
-  font-family: "Roboto", sans-serif;
-  font-size: 18px;
-  font-style: normal;
-  font-weight: 400;
-}
-
 .price__item {
   margin: 30px 0;
 }
