@@ -1,6 +1,9 @@
 @import "utils/global";
 @import "utils/placeholders";
 @import "utils/variables";
+
+@import "components/header";
+@import "components/mobile-menu";
 @import "components/section-modern.scss";
 @import "components/price-section";
 @import "components/bestsellers";
