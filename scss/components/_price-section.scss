@@ -1,0 +1,82 @@
+.price {
+
+  &__item {
+    margin: 30px 0;
+
+    &-line {
+      height: 1px;
+      border: none;
+      background: $primaryColor;
+      margin: 0;
+    }
+
+    &-text {
+      @extend %flex;
+
+      justify-content: space-between;
+      flex-direction: row;
+
+      color: $primaryColor;
+      font-family: "Roboto", sans-serif;
+    }
+
+    &-title {
+      @extend %title-font;
+
+      position: relative;
+      font-size: 28px;
+      line-height: 42px;
+
+      transform: translateX(0);
+      transition: transform 1s ease-in-out;
+    }
+
+    &-subtitle {
+      font-size: 16px;
+      font-style: normal;
+      font-weight: 700;
+      line-height: 24px;
+    }
+
+    &-additional-line {
+      position: absolute;
+      display: block;
+      width: 0;
+      height: 3px;
+      background-color: $primaryColor;
+      transition: width 1s ease-in-out;
+    }
+
+    &:hover .price__item-additional-line {
+      width: 40px;
+    }
+
+    &:hover .price__item-title {
+      transform: translateX(56px);
+    }
+  }
+}
+
+@media (min-width: 768px) {
+  .price {
+    &__item {
+      &-title {
+        font-size: 32px;
+        line-height: 45px;
+      }
+
+      &-subtitle {
+        font-size: 18px;
+        line-height: 27px;
+      }
+
+      &:hover .price__item-additional-line {
+        width: 50px;
+      }
+
+      &:hover .price__item-title {
+        transform: translateX(72px);
+      }
+    }
+  }
+}
