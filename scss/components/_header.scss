@@ -46,22 +46,33 @@ input[type="checkbox"]:checked
   ~ label
   .header-menu__linebox
   .header-menu__line1 {
+  -webkit-animation: line1 2s linear forwards alternate;
   animation: line1 2s linear forwards alternate;
+  background: red;
 }
 
-@keyframes line1 {
-  0% {
+@-webkit-keyframes line1 {
+  80% {
     transform: translateY(10px);
   }
 
   100% {
-    transform: rotate(-45deg) ;
-    // rotate: 45deg;
+    transform: translateY(0px) rotate(-45deg);
+  }
+}
+
+@keyframes line1 {
+  80% {
+    transform: translateY(10px);
+  }
+
+  100% {
+    transform: translateY(0px) rotate(-45deg);
   }
 }
 
 .header-menu__line1 {
-  transform-origin: center;
+  transform-origin: bottom right;
 }
 
 // line 2
@@ -70,7 +81,25 @@ input[type="checkbox"]:checked
   ~ label
   .header-menu__linebox
   .header-menu__line2 {
+  -webkit-animation: line2 2s linear forwards alternate;
   animation: line2 2s linear forwards alternate;
+}
+
+@-webkit-keyframes line2 {
+  0% {
+    transform: translateY(0px);
+    opacity: 1;
+  }
+
+  50% {
+    opacity: 0.5;
+  }
+
+  100% {
+    transform: translateY(4px);
+    opacity: 0;
+    display: none;
+  }
 }
 
 @keyframes line2 {
@@ -96,7 +125,25 @@ input[type="checkbox"]:checked
   ~ label
   .header-menu__linebox
   .header-menu__line3 {
+  -webkit-animation: line3 2s linear forwards alternate;
   animation: line3 2s linear forwards alternate;
+}
+
+@-webkit-keyframes line3 {
+  0% {
+    transform: translateY(0px);
+    opacity: 1;
+  }
+
+  50% {
+    opacity: 0.5;
+  }
+
+  100% {
+    transform: translateY(-4px);
+    opacity: 0;
+    display: none;
+  }
 }
 
 @keyframes line3 {
@@ -122,23 +169,33 @@ input[type="checkbox"]:checked
   ~ label
   .header-menu__linebox
   .header-menu__line4 {
+  -webkit-animation: line4 2s linear forwards alternate;
   animation: line4 2s linear forwards alternate;
+  background: green;
 }
 
-@keyframes line4 {
-  0% {
+@-webkit-keyframes line4 {
+  80% {
     transform: translateY(-10px);
   }
 
   100% {
-    // transform: translateY(-10px) ;
-    transform: rotate(45deg) ;
-    // rotate: -45deg;
+    transform: translateY(2.2px) rotate(45deg);
+  }
+}
+
+@keyframes line4 {
+  80% {
+    transform: translateY(-10px);
+  }
+
+  100% {
+    transform: translateY(2.2px) rotate(45deg);
   }
 }
 
 .header-menu__line4 {
-  transform-origin: center;
+  transform-origin: bottom right;
 }
 
 #header-menu__toggle {
