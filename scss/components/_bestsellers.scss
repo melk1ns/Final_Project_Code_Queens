@@ -1,4 +1,7 @@
 .bestsellers {
+
+  margin-bottom: 64px;
+
   @extend %flex;
 
   &__title {
@@ -56,6 +59,9 @@
 
 @media (min-width: 768px) {
   .bestsellers {
+
+    margin-bottom: 100px;
+
     &__block-cards {
       max-width: 704px;
       display: flex;
