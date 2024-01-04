@@ -1,100 +1,198 @@
 <!DOCTYPE html>
 <html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Minimal</title>
+        <link rel="icon" type="image/x-icon" href="./src/icons/favicon.ico">
+        <link rel="preconnect" href="https://fonts.googleapis.com">
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link href="https://fonts.googleapis.com/css2?family=Playfair+Display&family=Roboto:wght@400;700&display=swap"
+            rel="stylesheet">
+        <link rel="stylesheet" href="css/reset.css">
+        <link rel="stylesheet" href="css/main.css">
+    </head>
 
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Minimal</title>
-    <link rel="icon" type="image/x-icon" href="./src/icons/favicon.ico">
-    <link rel="preconnect" href="https://fonts.googleapis.com">
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Playfair+Display&family=Roboto:wght@400;700&display=swap"
-        rel="stylesheet">
-    <link rel="stylesheet" href="css/reset.css">
-    <link rel="stylesheet" href="css/main.css">
-</head>
-
-<body>
-    <header class="header">
-        <div class="container container-large header__block">
-            <svg class="logo-mob" width="100" height="16" viewBox="0 0 100 16">
-                <use xlink:href="./src/icons/logo-mob.svg#logo-mob"></use>
-            </svg>
-            <svg class="logo-desk" width="128" height="17" viewBox="0 0 128 17">
-                <use xlink:href="./src/icons/logo-desk.svg#logo-desk"></use>
-            </svg>
-            <nav class="header-nav">
-                <ul class="header-nav__list">
-                    <li><a href="#" class="header-nav__item">About us</a></li>
-                    <li><a href="#" class="header-nav__item">Our products</a></li>
-                    <li><a href="#" class="header-nav__item">Prices</a></li>
-                    <li><a href="#" class="header-nav__item">Bestsellers</a></li>
-                    <li><a href="#" class="header-nav__item">Reviews</a></li>
-                    <li><a href="#" class="header-nav__item">Contacts</a></li>
-                </ul>
-            </nav>
-            <div class="header-menu">
-                <input type="checkbox" id="header-menu__toggle">
-                <label class="header-menu__btn" for="header-menu__toggle">
-                    <div class="header-menu__linebox">
-                        <span class="header-menu__line header-menu__line1 "></span>
-                        <span class="header-menu__line header-menu__line2"></span>
-                        <span class="header-menu__line header-menu__line3"></span>
-                        <span class="header-menu__line header-menu__line4"></span>
-                    </div>
-                </label>
-                <div class="burger-menu__block">
-                    <ul class="burger-menu__list">
-                        <li><a href="#" class="burger-menu__item">About us</a></li>
-                        <li><a href="#" class="burger-menu__item">Our products</a></li>
-                        <li><a href="#" class="burger-menu__item">Prices</a></li>
-                        <li><a href="#" class="burger-menu__item">Bestsellers</a></li>
-                        <li><a href="#" class="burger-menu__item">Reviews</a></li>
-                        <li><a href="#" class="burger-menu__item">Contacts</a></li>
+    <body>
+        <header class="header">
+            <div class="container container-large header__block">
+                <svg class="logo-mob" width="100" height="16" viewBox="0 0 100 16">
+                    <use xlink:href="./src/icons/logo-mob.svg#logo-mob"></use>
+                </svg>
+                <svg class="logo-desk" width="128" height="17" viewBox="0 0 128 17">
+                    <use xlink:href="./src/icons/logo-desk.svg#logo-desk"></use>
+                </svg>
+                <nav class="header-nav">
+                    <ul class="header-nav__list">
+                        <li><a href="#" class="header-nav__item">About us</a></li>
+                        <li><a href="#" class="header-nav__item">Our products</a></li>
+                        <li><a href="#" class="header-nav__item">Prices</a></li>
+                        <li><a href="#" class="header-nav__item">Bestsellers</a></li>
+                        <li><a href="#" class="header-nav__item">Reviews</a></li>
+                        <li><a href="#" class="header-nav__item">Contacts</a></li>
                     </ul>
+                </nav>
+                <div class="header-menu">
+                    <input type="checkbox" id="header-menu__toggle">
+                    <label class="header-menu__btn" for="header-menu__toggle">
+                        <div class="header-menu__linebox">
+                            <span class="header-menu__line header-menu__line1 "></span>
+                            <span class="header-menu__line header-menu__line2"></span>
+                            <span class="header-menu__line header-menu__line3"></span>
+                            <span class="header-menu__line header-menu__line4"></span>
+                        </div>
+                    </label>
+                    <div class="burger-menu__block">
+                        <ul class="burger-menu__list">
+                            <li><a href="#" class="burger-menu__item">About us</a></li>
+                            <li><a href="#" class="burger-menu__item">Our products</a></li>
+                            <li><a href="#" class="burger-menu__item">Prices</a></li>
+                            <li><a href="#" class="burger-menu__item">Bestsellers</a></li>
+                            <li><a href="#" class="burger-menu__item">Reviews</a></li>
+                            <li><a href="#" class="burger-menu__item">Contacts</a></li>
+                        </ul>
+                    </div>
                 </div>
             </div>
-        </div>
-    </header>
-    <main>
-        <section class="container price-section">
-            <hr class="price__item-line">
-            <div class="price__item">
-                <div class="price__item-text">
-                    <span class="price__item-additional-line"></span>
-                    <h2 class="price__item-title">Chairs</h2>
-                    <p class="price__item-subtitle">from 200₴</p>
-                </div>
-            </div>
-            </div>
-            <hr class="price__item-line">
-            <div class="price__item">
-                <div class="price__item-text">
-                    <span class="price__item-additional-line"></span>
-                    <h2 class="price__item-title">Tables</h2>
-                    <p class="price__item-subtitle">from 250₴</p>
-                </div>
-            </div>
-            <hr class="price__item-line">
-            <div class="price__item">
-                <div class="price__item-text">
-                    <span class="price__item-additional-line"></span>
-                    <h2 class="price__item-title">Dressers</h2>
-                    <p class="price__item-subtitle">from 300₴</p>
-                </div>
-            </div>
-            <hr class="price__item-line">
-            <div class="price__item">
-                <div class="price__item-text">
-                    <span class="price__item-additional-line"></span>
-                    <h2 class="price__item-title">Sofas</h2>
-                    <p class="price__item-subtitle">from 500₴</p>
-                </div>
-            </div>
-            <hr class="price__item-line">
-        </section>
-    </main>
-    <footer></footer>
-</body>
+        </header>
+        <main>
+            <div class="banner">
+                <div class="container-minimalist">
+                    <p class="title-minimalist">Modern and minimalist furniture for you</p>
+                    <div class="container-img">
+                        <img src="images\chair-minimalist.png" alt="Image 1">
+                        <img class="desktop-image" src="images\desktop-sofa.png" alt="Desktop Image">
+                        <img class="mobile-image" src="images\sofa-mobile.png" alt="Mobile Image" >
 
+                    </div>
+                    <div class="container-bookshelf">
+                        <img src="images\bookshelf-minimalist.png" alt="Image 2" class="mobile-image">
+                        <p class="text-addition">Add a touch of elegance to your space with handcrafted furniture pieces</p>
+                        <button class="button-subscribe">Subscribe</button>
+                    </div>
+                </div>
+            </div>
+            <!-- section price -->
+            <section class="container price-section">
+                <hr class="price__item-line">
+                <div class="price__item">
+                    <div class="price__item-text">
+                        <span class="price__item-additional-line"></span>
+                        <h2 class="price__item-title">Chairs</h2>
+                        <p class="price__item-subtitle">from 200₴</p></div>
+                    </div>
+                </div>
+                <hr class="price__item-line">
+                <div class="price__item"> 
+                    <div class="price__item-text">
+                        <span class="price__item-additional-line"></span>
+                        <h2 class="price__item-title">Tables</h2>
+                        <p class="price__item-subtitle">from 250₴</p>
+                    </div>
+                </div>
+                <hr class="price__item-line">
+                <div class="price__item">
+                    <div class="price__item-text">
+                        <span class="price__item-additional-line"></span>
+                        <h2 class="price__item-title">Dressers</h2>
+                        <p class="price__item-subtitle">from 300₴</p>
+                    </div>
+                </div>
+                <hr class="price__item-line">
+                <div class="price__item">
+                    <div class="price__item-text">
+                        <span class="price__item-additional-line"></span>
+                        <h2 class="price__item-title">Sofas</h2>
+                        <p class="price__item-subtitle">from 500₴</p>
+                    </div>
+                </div>
+                <hr class="price__item-line">
+            </section>
+                <!-- section bestsellers -->
+            <section class="bestsellers">
+                <h2 class="bestsellers__title">bestsellers</h2>
+                <div class="container bestsellers__block">
+                    <div class="bestsellers__card--large">
+                        <picture class="bestsellers__card-picture">
+                            <!-- desktop -->
+                            <source srcset="./src/images/bestsellers-bed-desk@1x.jpg 1x, ./src/images/bestsellers-bed-desk@2x.jpg 2x" media="(min-width: 1440px)" type="image/jpeg"
+                            />
+                            <!-- tablet -->
+                            <source srcset="./src/images/bestsellers-bed-tablet@1x.jpg 1x, ./src/images/bestsellers-bed-tablet@2x.jpg 2x" media="(min-width: 768px)" type="image/jpeg"
+                            />
+                            <!-- mobile -->
+                            <source srcset="./src/images/bestsellers-bed-mob@1x.jpg 1x, ./src/images/bestsellers-bed-mob@2x.jpg 2x" media="(max-width: 767px)" type="image/jpeg"
+                            />
+                            <img src="./src/images/bestsellers-bed-desk@1x.jpg" alt="bed">
+                        </picture>
+                        <h2 class="bestsellers__card-title">The modern platform bed</h2>
+                        <p class="bestsellers__card-subtitle">750$</p>
+                    </div>
+                    <div class="bestsellers__block-cards">
+                        <div class="bestsellers__card">
+                            <picture>
+                                <!-- desktop -->
+                                <source srcset="./src/images/bestsellers-cozychairs-desk@1x.jpg 1x, ./src/images/bestsellers-cozychairs-desk@2x.jpg 2x" media="(min-width: 1440px)" type="image/jpeg"
+                                />
+                                <!-- tablet -->
+                                <source srcset="./src/images/bestsellers-cozychairs-tablet@1x.jpg 1x, ./src/images/bestsellers-cozychairs-tablet@2x.jpg 2x" media="(min-width: 768px)" type="image/jpeg"
+                                />
+                                <!-- mobile -->
+                                <source srcset="./src/images/bestsellers-cozychairs-mob@1x.jpg 1x, ./src/images/bestsellers-cozychairs-mob@2x.jpg 2x" media="(max-width: 767px)" type="image/jpeg"
+                                />
+                                <img src="./src/images/bestsellers-cozychairs-desk@1x.jpg" alt="chairs">
+                            </picture>
+                            <h2 class="bestsellers__card-title">The Cozy Lounge Chair</h2>
+                            <p class="bestsellers__card-subtitle">230$</p>
+                        </div>
+                        <div class="bestsellers__card bestsellers__card-base">
+                            <picture>
+                                <!-- desktop -->
+                                <source srcset="./src/images/bestsellers-accentchair-desk@1x.jpg 1x, ./src/images/bestsellers-accentchair-desk@2x.jpg 2x" media="(min-width: 1440px)" type="image/jpeg"
+                                />
+                                <!-- tablet -->
+                                <source srcset="./src/images/bestsellers-accentchair-tablet@1x.jpg 1x, ./src/images/bestsellers-accentchair-tablet@2x.jpg 2x" media="(min-width: 768px)" type="image/jpeg"
+                                />
+                                <!-- mobile -->
+                                <source srcset="./src/images/bestsellers-accentchair-mob@1x.jpg 1x, ./src/images/bestsellers-accentchair-mob@2x.jpg 2x" media="(max-width: 767px)" type="image/jpeg"
+                                />
+                                <img src="./src/images/bestsellers-accentchair-desk@1x.jpg" alt="chair">
+                            </picture>
+                            <h2 class="bestsellers__card-title">The industrial accent chair</h2>
+                            <p class="bestsellers__card-subtitle">250$</p>
+                        </div>
+
+                        <div class="bestsellers__card bestsellers__card--hidden" >
+                            <picture>
+                                <!-- desktop -->
+                                <source srcset="./src/images/bestsellers-stand-desk@1x.jpg 1x, ./src/images/bestsellers-stand-desk@2x.jpg 2x" media="(min-width: 1440px)" type="image/jpeg"
+                                />
+                                <!-- tablet -->
+                                <source srcset="./src/images/bestsellers-stand-tablet@1x.jpg 1x, ./src/images/bestsellers-stand-tablet@2x.jpg 2x" media="(min-width: 768px)" type="image/jpeg"
+                                />
+                                <img src="./src/images/bestsellers-stand-desk@1x.jpg" alt="stand">
+                            </picture>
+                            <h2 class="bestsellers__card-title">The sleek stand</h2>
+                            <p class="bestsellers__card-subtitle">300$</p>
+                        </div>
+
+                        <div class="bestsellers__card bestsellers__card--hidden ">
+                            <picture>
+                                <!-- desktop -->
+                                <source srcset="./src/images/bestsellers-sofa-desk@1x.jpg 1x, ./src/images/bestsellers-sofa-desk@2x.jpg 2x" media="(min-width: 1440px)" type="image/jpeg"
+                                />
+                                <!-- tablet -->
+                                <source srcset="./src/images/bestsellers-sofa-tablet@1x.jpg 1x, ./src/images/bestsellers-sofa-tablet@2x.jpg 2x" media="(min-width: 768px)" type="image/jpeg"
+                                />
+                                <img src="./src/images/bestsellers-sofa-desk@1x.jpg" alt="sofa">
+                            </picture>
+                            <h2 class="bestsellers__card-title">The minimalist sofa</h2>
+                            <p class="bestsellers__card-subtitle">650$</p>
+                        </div>
+                    </div>
+                </div>
+            </section>
+        </main>
+        <footer></footer>
+    </body>
 </html>
