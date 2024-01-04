@@ -114,6 +114,7 @@
     display: flex;
     justify-content: center;
     height: auto;
+    margin-bottom: 100px;
   }
   .banner .container-img img:first-child,
   .banner .container-img img.mobile-image {
@@ -163,6 +164,9 @@
     width: 300px;
   }
 }
+.price {
+  margin-bottom: 64px;
+}
 .price__item {
   margin: 30px 0;
 }
@@ -207,6 +211,9 @@
 }
 
 @media (min-width: 768px) {
+  .price {
+    margin-bottom: 100px;
+  }
   .price__item-title {
     font-size: 32px;
     line-height: 45px;
@@ -221,6 +228,9 @@
   .price__item:hover .price__item-title {
     transform: translateX(72px);
   }
+}
+.bestsellers {
+  margin-bottom: 64px;
 }
 .bestsellers__title {
   text-align: center;
@@ -259,6 +269,9 @@
 }
 
 @media (min-width: 768px) {
+  .bestsellers {
+    margin-bottom: 100px;
+  }
   .bestsellers__block-cards {
     max-width: 704px;
     display: flex;
