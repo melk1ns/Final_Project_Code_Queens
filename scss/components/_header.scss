@@ -48,7 +48,7 @@ input[type="checkbox"]:checked
   .header-menu__line1 {
   -webkit-animation: line1 1s linear forwards alternate;
   animation: line1 1s linear forwards alternate;
-  background: red;
+
 }
 
 @-webkit-keyframes line1 {
@@ -171,7 +171,6 @@ input[type="checkbox"]:checked
   .header-menu__line4 {
   -webkit-animation: line4 1s linear forwards alternate;
   animation: line4 1s linear forwards alternate;
-  background: green;
 }
 
 @-webkit-keyframes line4 {
@@ -212,6 +211,25 @@ input[type="checkbox"]:checked
 
     &-menu__linebox {
       height: 20px;
+    }
+  }
+
+  input[type="checkbox"]:checked
+    ~ label
+    .header-menu__linebox
+    .header-menu__line4 {
+    -webkit-animation: line4-tablet 1s linear forwards alternate;
+    animation: line4-tablet 1s linear forwards alternate;
+  
+  }
+
+  @keyframes line4-tablet {
+    80% {
+      transform: translateY(-10px);
+    }
+
+    100% {
+      transform: translateY(4px) rotate(45deg);
     }
   }
 }

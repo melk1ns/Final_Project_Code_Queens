@@ -87,7 +87,6 @@ input[type=checkbox]:checked ~ .burger-menu__block {
 
 input[type=checkbox]:checked ~ label .header-menu__linebox .header-menu__line1 {
   animation: line1 1s linear forwards alternate;
-  background: red;
 }
 @keyframes line1 {
   80% {
@@ -137,7 +136,6 @@ input[type=checkbox]:checked ~ label .header-menu__linebox .header-menu__line3 {
 }
 input[type=checkbox]:checked ~ label .header-menu__linebox .header-menu__line4 {
   animation: line4 1s linear forwards alternate;
-  background: green;
 }
 @keyframes line4 {
   80% {
@@ -165,6 +163,17 @@ input[type=checkbox]:checked ~ label .header-menu__linebox .header-menu__line4 {
   }
   .header-menu__linebox {
     height: 20px;
+  }
+  input[type=checkbox]:checked ~ label .header-menu__linebox .header-menu__line4 {
+    animation: line4-tablet 1s linear forwards alternate;
+  }
+  @keyframes line4-tablet {
+    80% {
+      transform: translateY(-10px);
+    }
+    100% {
+      transform: translateY(4px) rotate(45deg);
+    }
   }
 }
 @media (min-width: 1440px) {
