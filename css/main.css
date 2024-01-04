@@ -76,7 +76,7 @@
   line-height: 24px;
   letter-spacing: 0em;
   text-align: left;
-  color: #0A224A;
+  color: #0a224a;
 }
 
 .container-minimalist {
@@ -113,6 +113,7 @@
     background: none;
     display: flex;
     justify-content: center;
+    height: auto;
   }
   .banner .container-img img:first-child,
   .banner .container-img img.mobile-image {
@@ -122,6 +123,9 @@
     display: flex;
     align-items: flex-end;
     gap: 20px;
+  }
+  .container-minimalist {
+    padding-top: 0px;
   }
   .title-minimalist {
     position: absolute;
@@ -151,7 +155,6 @@
   }
   .container-minimalist {
     flex-direction: row;
-    padding-top: 190px;
   }
   .container-bookshelf {
     gap: 50px;
