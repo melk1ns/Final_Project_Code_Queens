@@ -53,7 +53,7 @@
 }
 
 .banner {
-  background-image: url("../images/product.png");
+  background-image: url("../src/images/product.png");
   background-size: cover;
   height: 717px;
   margin: 0 auto;
