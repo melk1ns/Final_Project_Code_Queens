@@ -23,13 +23,13 @@
             <div class="container-minimalist">
                 <p class="title-minimalist">Modern and minimalist furniture for you</p>
                 <div class="container-img">
-                    <img src="images\chair-minimalist.png" alt="Image 1">
-                    <img class="desktop-image" src="images\desktop-sofa.png" alt="Desktop Image">
-                    <img class="mobile-image" src="images\sofa-mobile.png" alt="Mobile Image">
+                    <img src="./src/images/chair-minimalist.png" alt="Image 1">
+                    <img class="desktop-image" src="./src/images/desktop-sofa.png" alt="Desktop Image">
+                    <img class="mobile-image" src="./src/images/sofa-mobile.png" alt="Mobile Image" >
 
                 </div>
                 <div class="container-bookshelf">
-                    <img src="images\bookshelf-minimalist.png" alt="Image 2" class="mobile-image">
+                    <img src="./src/images/bookshelf-minimalist.png" alt="Image 2" class="mobile-image">
                     <p class="text-addition">Add a touch of elegance to your space with handcrafted furniture pieces</p>
                     <button class="button-subscribe">Subscribe</button>
                 </div>
@@ -240,7 +240,36 @@
                     </div>
                 </div>
             </div>
-        </section>
+          </section>
+          <div class="container_newsletter">
+            <div>
+              <p class="title-newsletter">Newsletter</p>
+              <div class="container-design">
+                <p class="text-newsletter">Every week we will send you new designs and information about sales.</p>
+                <div>
+                  <form>
+                    <div class="input-container">
+                      <input type="text" placeholder="Name" class="form-newsletter">
+                    </div>
+                  </form>
+                  <form>
+                    <div class="input-container">
+                      <input type="email" placeholder="E-mail" class="form-newsletter email-input">
+                      <div class="validation-icon">
+                        <img src="images\error.png" alt="icon error" />
+                      </div>
+                    </div>
+                  </form>
+                </div>
+                <div class="container-checkbox">
+                  <input type="checkbox" class="checkbox" />
+                  <p class="text-agree">Agree to subscribe to the newsletter</p>
+                </div>
+                <button type="button" class="button-send">Send</button>
+              </div>
+            </div>
+            <img src="images\img-newsletter.png" alt="photo-newsletter" class="img-newsletter" />
+          </div>
     </main>
     <footer></footer>
 </body>
@@ -280,5 +309,5 @@
         });
     });
 </script>
-
+</body>
 </html>
