@@ -1,0 +1,121 @@
+.banner {
+  background-image: url("../src/images/product.png");
+  background-size: cover;
+  height: 717px;
+  margin: 0 auto;
+}
+
+.title-minimalist {
+  font-family: "Playfair Display";
+  font-size: 28px;
+  font-weight: 400;
+  line-height: 42px;
+  letter-spacing: 0em;
+  text-align: left;
+  text-transform: uppercase;
+}
+
+.text-addition {
+  font-family: "Roboto";
+  font-size: 16px;
+  font-weight: 400;
+  line-height: 24px;
+  letter-spacing: 0em;
+  text-align: left;
+  color: #0a224a;
+}
+
+.container-minimalist {
+  padding-top: 140px;
+  padding-left: 16px;
+  gap: 10px;
+  display: flex;
+  flex-direction: column;
+}
+
+.button-subscribe {
+  width: 224px;
+  height: 48px;
+  color: white;
+  background-color: $primaryColor;
+  border: none;
+}
+
+.container-bookshelf {
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+}
+
+.banner .container-img img:first-child,
+.banner .container-img img.desktop-image,
+.banner .container-img img.mobile-image,
+.mobile-image {
+  display: none;
+}
+
+@media (min-width: 768px) {
+  .banner {
+    background: none;
+    display: flex;
+    justify-content: center;
+    height: auto;
+  }
+
+  .banner .container-img img:first-child,
+  .banner .container-img img.mobile-image {
+    display: block;
+  }
+
+  .container-img {
+    display: flex;
+    align-items: flex-end;
+    gap: 20px;
+  }
+
+  .container-minimalist {
+    padding-top: 0px;
+  }
+
+  .title-minimalist {
+    position: absolute;
+    width: 648px;
+    font-family: Playfair Display;
+    font-size: 50px;
+    font-weight: 400;
+    line-height: 75px;
+    letter-spacing: 0em;
+    text-align: left;
+  }
+
+  .container-bookshelf {
+    display: flex;
+    flex-direction: column;
+  }
+
+  .text-addition {
+    width: 312px;
+  }
+}
+
+@media (min-width: 1440px) {
+  .banner .container-img img.desktop-image,
+  .mobile-image {
+    display: block;
+  }
+
+  .banner .container-img img.mobile-image {
+    display: none;
+  }
+
+  .container-minimalist {
+    flex-direction: row;
+  }
+
+  .container-bookshelf {
+    gap: 50px;
+  }
+  .text-addition {
+    width: 300px;
+  }
+}
