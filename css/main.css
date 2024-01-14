@@ -14,7 +14,7 @@
   text-transform: uppercase;
 }
 
-.clients-reviews__item .item__text, .clients-reviews__item .item__subtitle {
+.clients-reviews .item__text, .clients-reviews .item__subtitle {
   font-family: Roboto;
   font-size: 18px;
   font-style: normal;
@@ -22,24 +22,25 @@
 }
 
 .clients-reviews {
-  width: 100vw;
-  height: 374px;
+  width: 100%;
   background: #f7faff;
 }
 .clients-reviews__title {
   color: #0a224a;
   text-transform: uppercase;
+  margin-bottom: 30px;
+  padding-top: 60px;
 }
-.clients-reviews__items {
+.clients-reviews__carousel {
   display: flex;
+  gap: 16px;
+  justify-content: center;
 }
 .clients-reviews__item {
   width: 343px;
-  height: 230px;
   background: #fff;
   border-radius: 8px;
-  margin: 30px auto;
-  margin-top: 30px;
+  margin: 0 auto;
 }
 .clients-reviews__item--head {
   display: flex;
@@ -47,7 +48,10 @@
   padding-top: 24px;
   margin-bottom: 24px;
 }
-.clients-reviews__item .item__title {
+.clients-reviews__img--face {
+  margin-right: 14px;
+}
+.clients-reviews .item__title {
   color: #0a224a;
   font-size: 18px;
   font-style: normal;
@@ -55,33 +59,48 @@
   line-height: 32px;
   text-transform: uppercase;
 }
-.clients-reviews__item .item__subtitle {
+.clients-reviews .item__subtitle {
   color: #0a224a;
   text-align: center;
   font-size: 14px;
   line-height: 18px;
   display: flex;
-  justify-content: left;
 }
-.clients-reviews__item .item__text {
+.clients-reviews .item__text {
   color: #0a224a;
+  font-family: "Roboto";
   font-size: 14px;
   line-height: 20px;
   width: 296px;
-  height: 110px;
-  padding-left: 24px;
-}
-.clients-reviews__img--face {
-  margin-right: 14px;
+  margin: 0 auto;
+  padding-bottom: 24px;
 }
 
 @media (min-width: 768px) {
-  .clients-reviews {
-    width: 100vw;
-    height: 466px;
+  .clients-reviews__item--head {
+    margin-bottom: 18px;
   }
-  .clients-reviews__item:nth-last-child(2) {
-    display: inline;
+  .clients-reviews .item__text {
+    font-size: 18px;
+    font-weight: 400;
+    line-height: 27px;
+  }
+}
+@media (min-width: 1440px) {
+  .clients-reviews__carousel {
+    gap: 24px;
+    padding-bottom: 60px;
+  }
+  .clients-reviews__item {
+    width: 424px;
+    margin: 0;
+  }
+  .clients-reviews__item--head {
+    margin-bottom: 20px;
+  }
+  .clients-reviews .item__text {
+    width: 360px;
+    padding-bottom: 32px;
   }
 }
 * {

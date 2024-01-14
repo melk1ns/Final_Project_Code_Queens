@@ -11,13 +11,13 @@
       href="https://fonts.googleapis.com/css2?family=Playfair+Display&family=Roboto:wght@400;700&display=swap"
       rel="stylesheet"
     />
-    <link rel="stylesheet" href="css/reset.css" />
-    <link rel="stylesheet" href="css/main.css" />
     <link
       rel="stylesheet"
       type="text/css"
-      href="https://cdn.jsdelivr.net/jquery.slick/1.5.0/slick.css"
+      href="//cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.css"
     />
+    <link rel="stylesheet" href="css/reset.css" />
+    <link rel="stylesheet" href="css/main.css" />
     <link
       rel="stylesheet"
       type="text/css"
@@ -29,7 +29,7 @@
     <main>
       <section class="clients-reviews">
         <h2 class="clients-reviews__title">Clients reviews</h2>
-        <div class="clients-reviews__items">
+        <div class="clients-reviews__carousel">
           <div class="clients-reviews__item">
             <div class="clients-reviews__item--head">
               <picture class="clients-reviews__img--face">
@@ -59,8 +59,8 @@
               <picture class="clients-reviews__img--face">
                 <source
                   srcset="
-                    ./src/images/emily-watson@1x.jpg 1x,
-                    ./src/images/emily-watson@2x.jpg 2x
+                    ./src/images/james-williams@1x.jpg 1x,
+                    ./src/images/james-williams@2x.jpg 2x
                   "
                   type="image/jpeg"
                 />
@@ -83,12 +83,12 @@
               <picture class="clients-reviews__img--face">
                 <source
                   srcset="
-                    ./src/images/james-williams@1x.jpg 1x,
-                    ./src/images/james-williams@2x.jpg 2x
+                    ./src/images/emily-watson@1x.jpg 1x,
+                    ./src/images/emily-watson@2x.jpg 2x
                   "
                   type="image/jpeg"
                 />
-                <img src="./src/images/james-williams@1x.jpg" alt="face" />
+                <img src="./src/images/emily-watson@1x.jpgs" alt="face" />
               </picture>
               <div>
                 <h4 class="item__title">Emily Watson</h4>
@@ -106,45 +106,46 @@
       </section>
     </main>
     <footer></footer>
-    <script>
-      type = "text/javascript";
-      src = "https://code.jquery.com/jquery-1.11.0.js";
-    </script>
     <script
       type="text/javascript"
-      src="https://cdn.jsdelivr.net/jquery.slick/1.5.0/slick.min.js"
+      src="//code.jquery.com/jquery-1.11.0.min.js"
     ></script>
-    <script type="text/javascript">
-      $(".clients-reviews__items").slick({
-        dots: false,
-        infinite: true,
-        speed: 300,
-        slidesToShow: 3,
-        slidesToScroll: 3,
-        responsive: [
-          {
-            breakpoint: 1440,
-            settings: {
-              slidesToShow: 2,
-              slidesToScroll: 2,
-              infinite: true,
-              dots: false,
-            },
-          },
-          {
-            breakpoint: 768,
-            settings: {
-              slidesToShow: 1,
-              slidesToScroll: 1,
-              infinite: true,
-              dots: false,
-            },
-          },
+    <script
+      type="text/javascript"
+      src="//code.jquery.com/jquery-migrate-1.2.1.min.js"
+    ></script>
+    <script
+      type="text/javascript"
+      src="//cdn.jsdelivr.net/jquery.slick/1.6.0/slick.min.js"
+    ></script>
 
-          // You can unslick at a given breakpoint now by adding:
-          // settings: "unslick"
-          // instead of a settings object
-        ],
+    <script type="text/javascript">
+      $(document).ready(function () {
+        $(".clients-reviews__carousel").slick({
+          infinite: true,
+          speed: 300,
+          slidesToShow: 3,
+          slidesToScroll: 3,
+          responsive: [
+            {
+              breakpoint: 1440,
+              settings: {
+                slidesToShow: 2,
+                slidesToScroll: 2,
+                infinite: true,
+                dots: false,
+              },
+            },
+            {
+              breakpoint: 768,
+              settings: {
+                slidesToShow: 1,
+                slidesToScroll: 1,
+                infinite: true,
+              },
+            },
+          ],
+        });
       });
     </script>
   </body>

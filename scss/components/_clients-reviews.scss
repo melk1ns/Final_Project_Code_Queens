@@ -1,77 +1,107 @@
 .clients-reviews {
-  width: 100vw;
-  height: 374px;
+  width: 100%;
   background: $backgroundColor;
+
   &__title {
     @extend %title-font;
     @extend %flex;
 
     color: $primaryColor;
     text-transform: uppercase;
+    margin-bottom: 30px;
+    padding-top: 60px;
   }
-  &__items {
+  &__carousel {
     display: flex;
+    gap: 16px;
+    justify-content: center;
   }
-  // &__item:nth-last-child(1),
-  // &__item:nth-last-child(2) {
-  //   display: none;
-  // }
   &__item {
     width: 343px;
-    height: 230px;
     background: $secondaryColor;
     border-radius: 8px;
-    margin: 30px auto;
-    margin-top: 30px;
+    margin: 0 auto;
+
     &--head {
       display: flex;
       padding-left: 24px;
       padding-top: 24px;
       margin-bottom: 24px;
     }
-    .item {
-      &__title {
-        color: $primaryColor;
-        font-size: 18px;
-        font-style: normal;
-        font-weight: 700;
-        line-height: 32px;
-        text-transform: uppercase;
-      }
-      &__subtitle {
-        @extend %subtitle-font;
-
-        color: $primaryColor;
-        text-align: center;
-        font-size: 14px;
-        line-height: 18px;
-        display: flex;
-        justify-content: left;
-      }
-      &__text {
-        @extend %subtitle-font;
-
-        color: $primaryColor;
-        font-size: 14px;
-        line-height: 20px;
-        width: 296px;
-        height: 110px;
-        padding-left: 24px;
-      }
+  }
+  &__img {
+    &--face {
+      margin-right: 14px;
     }
   }
 
-  &__img--face {
-    margin-right: 14px;
+  .item {
+    &__title {
+      color: $primaryColor;
+      font-size: 18px;
+      font-style: normal;
+      font-weight: 700;
+      line-height: 32px;
+      text-transform: uppercase;
+    }
+    &__subtitle {
+      @extend %subtitle-font;
+
+      color: $primaryColor;
+      text-align: center;
+      font-size: 14px;
+      line-height: 18px;
+      display: flex;
+    }
+    &__text {
+      @extend %subtitle-font;
+
+      color: $primaryColor;
+      font-family: "Roboto";
+      font-size: 14px;
+      line-height: 20px;
+      width: 296px;
+      margin: 0 auto;
+      padding-bottom: 24px;
+    }
   }
 }
 
 @media (min-width: 768px) {
   .clients-reviews {
-    width: 100vw;
-    height: 466px;
-    &__item:nth-last-child(2) {
-      display: inline;
+    &__item {
+      &--head {
+        margin-bottom: 18px;
+      }
+    }
+    .item {
+      &__text {
+        font-size: 18px;
+        font-weight: 400;
+        line-height: 27px;
+      }
+    }
+  }
+}
+
+@media (min-width: 1440px) {
+  .clients-reviews {
+    &__carousel {
+      gap: 24px;
+      padding-bottom: 60px;
+    }
+    &__item {
+      width: 424px;
+      margin: 0;
+      &--head {
+        margin-bottom: 20px;
+      }
+    }
+    .item {
+      &__text {
+        width: 360px;
+        padding-bottom: 32px;
+      }
     }
   }
 }
