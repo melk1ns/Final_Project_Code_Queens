@@ -43,10 +43,8 @@
     letter-spacing: 0.16px;
     margin-left: 16px;
     margin-top: 36px;
-    .details {
-      &__item:last-child {
-        margin-top: 8px;
-      }
+    .details__item:last-child {
+      margin-top: 8px;
     }
   }
   &__contacts {
@@ -87,14 +85,12 @@
       margin-right: 32px;
       width: 152px;
       gap: 16px;
-      .socials-media {
-        &__link {
-          &--tab {
-            display: flex;
-          }
-          &--mob {
-            display: none;
-          }
+      .socials-media__link {
+        &--tab {
+          display: flex;
+        }
+        &--mob {
+          display: none;
         }
       }
     }
