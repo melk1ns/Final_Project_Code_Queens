@@ -7,35 +7,3 @@
 @import "components/price-section";
 @import "components/bestsellers";
 @import "components/footer";
-* {
-  box-sizing: border-box;
-  font-family: "Roboto", sans-serif;
-}
-
-.hidden-titles {
-  display: none;
-}
-
-.container {
-  width: 100%;
-  margin-left: 16px;
-  margin-right: 16px;
-}
-
-@media (min-width: 768px) {
-  .container {
-    margin-left: 32px;
-    margin-right: 32px;
-  }
-}
-
-@media (min-width: 1440px) {
-  .container {
-    margin: 0 auto;
-    width: 1096px;
-
-    &-large {
-      width: 1320px;
-    }
-  }
-}

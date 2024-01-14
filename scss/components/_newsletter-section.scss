@@ -1,3 +1,7 @@
+.wrapper-newsletter{
+display: flex;
+justify-content: center;
+}
 .container_newsletter {
   width: 343px;
   display: flex;
@@ -55,7 +59,8 @@
 
 @media (min-width:768px) {
   .container_newsletter {
-    width: 536px;
+    width: auto;
+    height: auto;
   }
 
   .title-newsletter {
