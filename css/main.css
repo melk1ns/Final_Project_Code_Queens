@@ -45,8 +45,7 @@
   text-transform: uppercase;
 }
 
-.bestsellers__card-subtitle, .bestsellers__card-title,
-.footer__info, .footer__details, .footer__post, .footer__contacts, .footer__list {
+.footer__info, .footer__details, .footer__post, .footer__contacts, .footer__list, .bestsellers__card-subtitle, .bestsellers__card-title {
   font-family: "Roboto", sans-serif;
   font-size: 18px;
   font-style: normal;
@@ -145,7 +144,7 @@
   line-height: 24px;
   letter-spacing: 0em;
   text-align: left;
-  color: #0A224A;
+  color: #0a224a;
 }
 
 .container-minimalist {
@@ -224,7 +223,6 @@
   }
   .container-minimalist {
     flex-direction: row;
-    padding-top: 190px;
     gap: 25px;
   }
   .container-bookshelf {
@@ -520,10 +518,12 @@ input:invalid {
     margin-bottom: 0;
   }
   .bestsellers__card--hidden {
-    margin-top: 30px; 
+    margin-top: 30px;
   }
+}
 .footer {
   background: #0a224a;
+  position: relative;
 }
 .footer__container {
   display: flex;
@@ -603,7 +603,7 @@ input:invalid {
   .footer__list {
     position: absolute;
     left: 384px;
-    bottom: 0;
+    top: 10px;
     height: 215px;
     display: flex;
     gap: 16px;
@@ -648,7 +648,7 @@ input:invalid {
   .footer__list {
     display: flex;
     flex-direction: row;
-    bottom: 226px;
+    top: 44px;
     left: 404px;
     gap: 30px;
     margin-top: 0;

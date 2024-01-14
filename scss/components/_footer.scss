@@ -1,5 +1,6 @@
 .footer {
   background: $primaryColor;
+  position: relative;
   &__container {
     display: flex;
     justify-content: space-between;
@@ -97,7 +98,7 @@
     &__list {
       position: absolute;
       left: 384px;
-      bottom: 0;
+      top: 10px;
       height: 215px;
       display: flex;
       gap: 16px;
@@ -149,7 +150,8 @@
     &__list {
       display: flex;
       flex-direction: row;
-      bottom: 226px;
+      // bottom: 226px;
+      top: 44px;
       left: 404px;
       gap: 30px;
       margin-top: 0;
