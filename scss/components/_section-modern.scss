@@ -1,12 +1,12 @@
 .banner {
-  background-image: url("../src/images/product.png");
+  background-image: url("../images/product.png");
   background-size: cover;
   height: 717px;
   margin: 0 auto;
 }
 
 .title-minimalist {
-  font-family: "Playfair Display";
+  font-family: 'Playfair Display';
   font-size: 28px;
   font-weight: 400;
   line-height: 42px;
@@ -15,14 +15,15 @@
   text-transform: uppercase;
 }
 
-.text-addition {
-  font-family: "Roboto";
+.text-addition{
+  font-family: 'Roboto';
   font-size: 16px;
   font-weight: 400;
   line-height: 24px;
   letter-spacing: 0em;
   text-align: left;
-  color: #0a224a;
+  color: #0A224A;
+
 }
 
 .container-minimalist {
@@ -39,6 +40,7 @@
   color: white;
   background-color: $primaryColor;
   border: none;
+
 }
 
 .container-bookshelf {
@@ -47,6 +49,7 @@
   gap: 20px;
 }
 
+
 .banner .container-img img:first-child,
 .banner .container-img img.desktop-image,
 .banner .container-img img.mobile-image,
@@ -54,12 +57,12 @@
   display: none;
 }
 
-@media (min-width: 768px) {
+
+@media (min-width:768px) {
   .banner {
     background: none;
     display: flex;
     justify-content: center;
-    height: auto;
   }
 
   .banner .container-img img:first-child,
@@ -70,11 +73,7 @@
   .container-img {
     display: flex;
     align-items: flex-end;
-    gap: 25px;
-  }
-
-  .container-minimalist {
-    padding-top: 0px;
+    gap: 20px
   }
 
   .title-minimalist {
@@ -86,11 +85,13 @@
     line-height: 75px;
     letter-spacing: 0em;
     text-align: left;
+
   }
 
   .container-bookshelf {
     display: flex;
     flex-direction: column;
+
   }
 
   .text-addition {
@@ -98,7 +99,8 @@
   }
 }
 
-@media (min-width: 1440px) {
+@media (min-width:1440px) {
+
   .banner .container-img img.desktop-image,
   .mobile-image {
     display: block;
@@ -110,7 +112,7 @@
 
   .container-minimalist {
     flex-direction: row;
-    gap: 25px;
+   padding-top: 190px;
   }
 
   .container-bookshelf {
