@@ -42,13 +42,13 @@
   border-radius: 8px;
   margin: 0 auto;
 }
-.clients-reviews__item--head {
+.clients-reviews__overhead-part {
   display: flex;
   padding-left: 24px;
   padding-top: 24px;
   margin-bottom: 24px;
 }
-.clients-reviews__img--face {
+.clients-reviews__image {
   margin-right: 14px;
 }
 .clients-reviews .item__title {
@@ -85,6 +85,10 @@
     font-weight: 400;
     line-height: 27px;
   }
+  .clients-reviews .slick-track {
+    gap: 16px;
+    display: flex;
+  }
 }
 @media (min-width: 1440px) {
   .clients-reviews__carousel {
@@ -101,6 +105,9 @@
   .clients-reviews .item__text {
     width: 360px;
     padding-bottom: 32px;
+  }
+  .clients-reviews .slick-track {
+    gap: 23px;
   }
 }
 * {

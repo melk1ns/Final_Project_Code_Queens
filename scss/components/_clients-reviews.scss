@@ -21,18 +21,16 @@
     background: $secondaryColor;
     border-radius: 8px;
     margin: 0 auto;
-
-    &--head {
-      display: flex;
-      padding-left: 24px;
-      padding-top: 24px;
-      margin-bottom: 24px;
-    }
   }
-  &__img {
-    &--face {
-      margin-right: 14px;
-    }
+  &__overhead-part {
+    display: flex;
+    padding-left: 24px;
+    padding-top: 24px;
+    margin-bottom: 24px;
+  }
+
+  &__image {
+    margin-right: 14px;
   }
 
   .item {
@@ -81,6 +79,10 @@
         line-height: 27px;
       }
     }
+    .slick-track {
+      gap: 16px;
+      display: flex;
+    }
   }
 }
 
@@ -102,6 +104,9 @@
         width: 360px;
         padding-bottom: 32px;
       }
+    }
+    .slick-track {
+      gap: 23px;
     }
   }
 }

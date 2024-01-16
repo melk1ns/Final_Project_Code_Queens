@@ -31,8 +31,8 @@
         <h2 class="clients-reviews__title">Clients reviews</h2>
         <div class="clients-reviews__carousel">
           <div class="clients-reviews__item">
-            <div class="clients-reviews__item--head">
-              <picture class="clients-reviews__img--face">
+            <div class="clients-reviews__overhead-part">
+              <picture class="clients-reviews__image">
                 <source
                   srcset="
                     ./src/images/alexandra-dream@1x.jpg 1x,
@@ -55,8 +55,8 @@
             </p>
           </div>
           <div class="clients-reviews__item">
-            <div class="clients-reviews__item--head">
-              <picture class="clients-reviews__img--face">
+            <div class="clients-reviews__overhead-part">
+              <picture class="clients-reviews__image">
                 <source
                   srcset="
                     ./src/images/james-williams@1x.jpg 1x,
@@ -79,8 +79,8 @@
             </p>
           </div>
           <div class="clients-reviews__item">
-            <div class="clients-reviews__item--head">
-              <picture class="clients-reviews__img--face">
+            <div class="clients-reviews__overhead-part">
+              <picture class="clients-reviews__image">
                 <source
                   srcset="
                     ./src/images/emily-watson@1x.jpg 1x,
@@ -123,6 +123,7 @@
       $(document).ready(function () {
         $(".clients-reviews__carousel").slick({
           infinite: true,
+          arrows: false,
           speed: 300,
           slidesToShow: 3,
           slidesToScroll: 3,
@@ -131,7 +132,7 @@
               breakpoint: 1440,
               settings: {
                 slidesToShow: 2,
-                slidesToScroll: 2,
+                slidesToScroll: 1,
                 infinite: true,
                 dots: false,
               },
