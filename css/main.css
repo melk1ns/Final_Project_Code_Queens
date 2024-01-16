@@ -1,136 +1,12 @@
-.about-us__img, .about-us {
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  flex-direction: column;
+* {
+  box-sizing: border-box;
+  font-family: "Roboto", sans-serif;
 }
 
-.about-us .item__number, .about-us__title {
-  font-family: Roboto;
-  font-size: 32px;
-  font-style: normal;
-  font-weight: 400;
-  line-height: 45px;
-  text-transform: uppercase;
+.hidden-titles {
+  display: none;
 }
 
-.about-us .item__subtitle, .about-us__subtitle, .about-us__text {
-  font-family: Roboto;
-  font-size: 18px;
-  font-style: normal;
-  font-weight: 400;
-}
-
-.about-us__background {
-  background: #f7faff;
-}
-.about-us__content {
-  background: #f7faff;
-}
-.about-us__text-container {
-  width: 343px;
-  margin: 0 auto;
-  padding: 64px 16px;
-}
-.about-us__logo {
-  display: flex;
-}
-.about-us__text {
-  color: #0a224a;
-  margin-left: 20px;
-}
-.about-us__title {
-  color: #0a224a;
-  font-size: 32px;
-  line-height: 42px;
-  text-transform: uppercase;
-  margin-top: 36px;
-}
-.about-us__subtitle {
-  color: #0a224a;
-  font-size: 18px;
-  line-height: 24px;
-  margin-top: 30px;
-}
-.about-us__item {
-  margin: 0 auto;
-  width: 170px;
-  margin-top: 30px;
-}
-.about-us .item__number {
-  margin: 0 auto;
-  color: #0a224a;
-  text-align: center;
-  font-size: 50px;
-  line-height: 75px;
-  text-transform: uppercase;
-  width: 170px;
-  height: 75px;
-}
-.about-us .item__subtitle {
-  color: #0a224a;
-  text-align: center;
-  font-size: 16px;
-  line-height: 24px;
-  margin-top: 14px;
-}
-@media (min-width: 768px) {
-  .about-us__background {
-    background: none;
-  }
-  .about-us__content {
-    height: 499px;
-    width: 704px;
-  }
-  .about-us__text-container {
-    width: 576px;
-  }
-  .about-us__title, .about-us__subtitle {
-    width: 576px;
-  }
-  .about-us__items {
-    display: flex;
-    flex-direction: row;
-  }
-  .about-us__item:first-child {
-    margin-right: 33px;
-  }
-  .about-us__item:last-child {
-    margin-left: 33px;
-  }
-  .about-us__img {
-    margin-top: 30px;
-  }
-}
-@media (min-width: 1440px) {
-  .about-us {
-    display: flex;
-    flex-direction: row;
-    justify-content: center;
-  }
-  .about-us__wrraper {
-    display: flex;
-  }
-  .about-us__content {
-    width: 760px;
-    height: 500px;
-    margin-top: 20px;
-  }
-  .about-us__text-container, .about-us__title, .about-us__subtitle {
-    width: 622px;
-  }
-  .about-us__item:first-child {
-    margin-right: 56px;
-  }
-  .about-us__item:last-child {
-    margin-left: 56px;
-  }
-  .about-us__img {
-    height: 540px;
-    margin-left: 24px;
-    margin-top: 0;
-  }
-}
 .container {
   width: 100%;
   padding-left: 16px;
@@ -153,14 +29,14 @@
     width: 1320px;
   }
 }
-.bestsellers__block, .bestsellers, .price__item-text, .burger-menu__list, .header__block, .header {
+.about-us__img, .about-us, .bestsellers__block, .bestsellers, .price__item-text, .burger-menu__list, .header__block, .header {
   display: flex;
   justify-content: center;
   align-items: center;
   flex-direction: column;
 }
 
-.bestsellers__title, .price__item-title {
+.about-us .item__number, .about-us__title, .bestsellers__title, .price__item-title {
   font-family: "Roboto", sans-serif;
   font-size: 32px;
   font-style: normal;
@@ -169,7 +45,7 @@
   text-transform: uppercase;
 }
 
-.footer__info, .footer__details, .footer__post, .footer__contacts, .footer__list, .bestsellers__card-subtitle, .bestsellers__card-title, .burger-menu__item {
+.about-us .item__subtitle, .about-us__subtitle, .about-us__text, .footer__info, .footer__details, .footer__post, .footer__contacts, .footer__list, .bestsellers__card-subtitle, .bestsellers__card-title, .burger-menu__item {
   font-family: "Roboto", sans-serif;
   font-size: 18px;
   font-style: normal;
@@ -388,7 +264,6 @@ input[type=checkbox]:checked ~ label .header-menu__linebox .header-menu__line4 {
     display: none;
   }
 }
-
 .products-title {
   font-family: Roboto;
   font-size: 32px;
@@ -1010,5 +885,116 @@ input:invalid {
   }
   .footer__post {
     margin-left: 82px;
+  }
+}
+.about-us__background {
+  background: #f7faff;
+}
+.about-us__content {
+  background: #f7faff;
+}
+.about-us__text-container {
+  width: 343px;
+  margin: 0 auto;
+  padding: 64px 16px;
+}
+.about-us__logo {
+  display: flex;
+}
+.about-us__text {
+  color: #0a224a;
+  margin-left: 20px;
+}
+.about-us__title {
+  color: #0a224a;
+  font-size: 32px;
+  line-height: 42px;
+  text-transform: uppercase;
+  margin-top: 36px;
+}
+.about-us__subtitle {
+  color: #0a224a;
+  font-size: 18px;
+  line-height: 24px;
+  margin-top: 30px;
+}
+.about-us__item {
+  margin: 0 auto;
+  width: 170px;
+  margin-top: 30px;
+}
+.about-us .item__number {
+  margin: 0 auto;
+  color: #0a224a;
+  text-align: center;
+  font-size: 50px;
+  line-height: 75px;
+  text-transform: uppercase;
+  width: 170px;
+  height: 75px;
+}
+.about-us .item__subtitle {
+  color: #0a224a;
+  text-align: center;
+  font-size: 16px;
+  line-height: 24px;
+  margin-top: 14px;
+}
+@media (min-width: 768px) {
+  .about-us__background {
+    background: none;
+  }
+  .about-us__content {
+    height: 499px;
+    width: 704px;
+  }
+  .about-us__text-container {
+    width: 576px;
+  }
+  .about-us__title, .about-us__subtitle {
+    width: 576px;
+  }
+  .about-us__items {
+    display: flex;
+    flex-direction: row;
+  }
+  .about-us__item:first-child {
+    margin-right: 33px;
+  }
+  .about-us__item:last-child {
+    margin-left: 33px;
+  }
+  .about-us__img {
+    margin-top: 30px;
+  }
+}
+@media (min-width: 1440px) {
+  .about-us {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+  }
+  .about-us__wrraper {
+    display: flex;
+    justify-content: center;
+  }
+  .about-us__content {
+    width: 760px;
+    height: 500px;
+    margin-top: 20px;
+  }
+  .about-us__text-container, .about-us__title, .about-us__subtitle {
+    width: 622px;
+  }
+  .about-us__item:first-child {
+    margin-right: 56px;
+  }
+  .about-us__item:last-child {
+    margin-left: 56px;
+  }
+  .about-us__img {
+    height: 540px;
+    margin-left: 24px;
+    margin-top: 0;
   }
 }
