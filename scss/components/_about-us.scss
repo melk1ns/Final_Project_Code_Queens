@@ -2,6 +2,7 @@
   @extend %flex;
   &__background {
     background: $backgroundColor;
+    width: 100%;
   }
   &__content {
     background: $backgroundColor;
@@ -75,6 +76,7 @@
   .about-us {
     &__background {
       background: none;
+      width: 704px;
     }
 
     &__content {
@@ -112,6 +114,9 @@
     &__wrraper {
       display: flex;
       justify-content: center;
+    }
+    &__background {
+      width: 760px;
     }
     &__content {
       width: 760px;

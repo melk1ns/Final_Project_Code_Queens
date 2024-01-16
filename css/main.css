@@ -889,6 +889,7 @@ input:invalid {
 }
 .about-us__background {
   background: #f7faff;
+  width: 100%;
 }
 .about-us__content {
   background: #f7faff;
@@ -943,6 +944,7 @@ input:invalid {
 @media (min-width: 768px) {
   .about-us__background {
     background: none;
+    width: 704px;
   }
   .about-us__content {
     height: 499px;
@@ -977,6 +979,9 @@ input:invalid {
   .about-us__wrraper {
     display: flex;
     justify-content: center;
+  }
+  .about-us__background {
+    width: 760px;
   }
   .about-us__content {
     width: 760px;
