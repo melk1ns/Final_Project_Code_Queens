@@ -1,155 +1,456 @@
 <!DOCTYPE html>
 <html lang="en">
-    <head>
-        <meta charset="UTF-8">
-        <meta name="viewport" content="width=device-width, initial-scale=1.0">
-        <title>Minimal</title>
-        <link rel="icon" type="image/x-icon" href="./src/icons/favicon.ico" >
-        <link rel="preconnect" href="https://fonts.googleapis.com">
-        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-        <link href="https://fonts.googleapis.com/css2?family=Playfair+Display&family=Roboto:wght@400;700&display=swap" rel="stylesheet">
-        <link rel="stylesheet" href="css/reset.css">
-        <link rel="stylesheet" href="css/main.css">
-    </head>
-    <body>
-        <header></header>
-        <main>
-          <div class="banner">
-            <div class="container-minimalist">
-                <p class="title-minimalist">Modern and minimalist furniture for you</p>
-                <div class="container-img">
-                    <img src="./src/images/chair-minimalist.png" alt="Image 1">
-                    <img class="desktop-image" src="./src/images/desktop-sofa.png" alt="Desktop Image">
-                    <img class="mobile-image" src="./src/images/sofa-mobile.png" alt="Mobile Image" >
 
-                </div>
-                <div class="container-bookshelf">
-                    <img src="./src/images/bookshelf-minimalist.png" alt="Image 2" class="mobile-image">
-                    <p class="text-addition">Add a touch of elegance to your space with handcrafted furniture pieces</p>
-                    <button class="button-subscribe">Subscribe</button>
-                </div>
-            </div>
+<head>
+  <meta charset="UTF-8">
+  <meta name="description" content="Minimal - educational project">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Minimal</title>
+  <link rel="icon" type="image/x-icon" href="./src/icons/favicon.ico">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Playfair+Display&family=Roboto:wght@400;700&display=swap"
+    rel="stylesheet">
+  <link rel="stylesheet" type="text/css" href="https://cdn.jsdelivr.net/jquery.slick/1.5.0/slick.css" />
+  <link rel="stylesheet" type="text/css" href="https://cdn.jsdelivr.net/jquery.slick/1.5.0/slick-theme.css" />
+  <link rel="stylesheet" href="css/reset.css">
+  <link rel="stylesheet" href="css/main.css">
+</head>
+
+<body>
+  <header class="header">
+    <div class="container container-large header__block">
+      <svg class="logo-mob" width="100" height="16" viewBox="0 0 100 16">
+        <use xlink:href="./src/icons/logo-mob.svg#logo-mob"></use>
+      </svg>
+      <svg class="logo-desk" width="128" height="17" viewBox="0 0 128 17">
+        <use xlink:href="./src/icons/logo-desk.svg#logo-desk"></use>
+      </svg>
+      <nav class="header-nav">
+        <ul class="header-nav__list">
+          <li><a href="#" class="header-nav__item">About us</a></li>
+          <li><a href="#" class="header-nav__item">Our products</a></li>
+          <li><a href="#" class="header-nav__item">Prices</a></li>
+          <li><a href="#" class="header-nav__item">Bestsellers</a></li>
+          <li><a href="#" class="header-nav__item">Reviews</a></li>
+          <li><a href="#" class="header-nav__item">Contacts</a></li>
+        </ul>
+      </nav>
+      <div class="header-menu">
+        <input type="checkbox" id="header-menu__toggle">
+        <label class="header-menu__btn" for="header-menu__toggle">
+          <span class="header-menu__linebox">
+            <span class="header-menu__line header-menu__line1 "></span>
+            <span class="header-menu__line header-menu__line2"></span>
+            <span class="header-menu__line header-menu__line3"></span>
+            <span class="header-menu__line header-menu__line4"></span>
+          </span>
+        </label>
+        <div class="burger-menu__block">
+          <ul class="burger-menu__list">
+            <li><a href="#" class="burger-menu__item">About us</a></li>
+            <li><a href="#" class="burger-menu__item">Our products</a></li>
+            <li><a href="#" class="burger-menu__item">Prices</a></li>
+            <li><a href="#" class="burger-menu__item">Bestsellers</a></li>
+            <li><a href="#" class="burger-menu__item">Reviews</a></li>
+            <li><a href="#" class="burger-menu__item">Contacts</a></li>
+          </ul>
         </div>
-            <section class="container price-section">
-                <hr class="price__item-line">
-                <div class="price__item">
-                    <div class="price__item-text">
-                        <span class="price__item-additional-line"></span>
-                        <h2 class="price__item-title">Chairs</h2>
-                        <p class="price__item-subtitle">from 200₴</p></div>
-                    </div>
-                </div>
-                <hr class="price__item-line">
-                <div class="price__item"> 
-                    <div class="price__item-text">
-                        <span class="price__item-additional-line"></span>
-                        <h2 class="price__item-title">Tables</h2>
-                        <p class="price__item-subtitle">from 250₴</p>
-                    </div>
-                </div>
-                <hr class="price__item-line">
-                <div class="price__item">
-                    <div class="price__item-text">
-                        <span class="price__item-additional-line"></span>
-                        <h2 class="price__item-title">Dressers</h2>
-                        <p class="price__item-subtitle">from 300₴</p>
-                    </div>
-                </div>
-                <hr class="price__item-line">
-                <div class="price__item">
-                    <div class="price__item-text">
-                        <span class="price__item-additional-line"></span>
-                        <h2 class="price__item-title">Sofas</h2>
-                        <p class="price__item-subtitle">from 500₴</p>
-                    </div>
-                </div>
-                <hr class="price__item-line">
-            </section>
-                <!-- section bestsellers -->
-            <section class="bestsellers">
-                <h2 class="bestsellers__title">bestsellers</h2>
-                <div class="container bestsellers__block">
-                    <div class="bestsellers__card--large">
-                        <picture class="bestsellers__card-picture">
-                            <!-- desktop -->
-                            <source srcset="./src/images/bestsellers-bed-desk@1x.jpg 1x, ./src/images/bestsellers-bed-desk@2x.jpg 2x" media="(min-width: 1440px)" type="image/jpeg"
-                            />
-                            <!-- tablet -->
-                            <source srcset="./src/images/bestsellers-bed-tablet@1x.jpg 1x, ./src/images/bestsellers-bed-tablet@2x.jpg 2x" media="(min-width: 768px)" type="image/jpeg"
-                            />
-                            <!-- mobile -->
-                            <source srcset="./src/images/bestsellers-bed-mob@1x.jpg 1x, ./src/images/bestsellers-bed-mob@2x.jpg 2x" media="(max-width: 767px)" type="image/jpeg"
-                            />
-                            <img src="./src/images/bestsellers-bed-desk@1x.jpg" alt="bed">
-                        </picture>
-                        <h2 class="bestsellers__card-title">The modern platform bed</h2>
-                        <p class="bestsellers__card-subtitle">750$</p>
-                    </div>
-                    <div class="bestsellers__block-cards">
-                        <div class="bestsellers__card">
-                            <picture>
-                                <!-- desktop -->
-                                <source srcset="./src/images/bestsellers-cozychairs-desk@1x.jpg 1x, ./src/images/bestsellers-cozychairs-desk@2x.jpg 2x" media="(min-width: 1440px)" type="image/jpeg"
-                                />
-                                <!-- tablet -->
-                                <source srcset="./src/images/bestsellers-cozychairs-tablet@1x.jpg 1x, ./src/images/bestsellers-cozychairs-tablet@2x.jpg 2x" media="(min-width: 768px)" type="image/jpeg"
-                                />
-                                <!-- mobile -->
-                                <source srcset="./src/images/bestsellers-cozychairs-mob@1x.jpg 1x, ./src/images/bestsellers-cozychairs-mob@2x.jpg 2x" media="(max-width: 767px)" type="image/jpeg"
-                                />
-                                <img src="./src/images/bestsellers-cozychairs-desk@1x.jpg" alt="chairs">
-                            </picture>
-                            <h2 class="bestsellers__card-title">The Cozy Lounge Chair</h2>
-                            <p class="bestsellers__card-subtitle">230$</p>
-                        </div>
-                        <div class="bestsellers__card bestsellers__card-base">
-                            <picture>
-                                <!-- desktop -->
-                                <source srcset="./src/images/bestsellers-accentchair-desk@1x.jpg 1x, ./src/images/bestsellers-accentchair-desk@2x.jpg 2x" media="(min-width: 1440px)" type="image/jpeg"
-                                />
-                                <!-- tablet -->
-                                <source srcset="./src/images/bestsellers-accentchair-tablet@1x.jpg 1x, ./src/images/bestsellers-accentchair-tablet@2x.jpg 2x" media="(min-width: 768px)" type="image/jpeg"
-                                />
-                                <!-- mobile -->
-                                <source srcset="./src/images/bestsellers-accentchair-mob@1x.jpg 1x, ./src/images/bestsellers-accentchair-mob@2x.jpg 2x" media="(max-width: 767px)" type="image/jpeg"
-                                />
-                                <img src="./src/images/bestsellers-accentchair-desk@1x.jpg" alt="chair">
-                            </picture>
-                            <h2 class="bestsellers__card-title">The industrial accent chair</h2>
-                            <p class="bestsellers__card-subtitle">250$</p>
-                        </div>
+      </div>
+    </div>
+  </header>
+  <main>
+    <div class="banner">
+      <div class="container-minimalist">
+        <p class="title-minimalist">Modern and minimalist furniture for you</p>
+        <div class="container-img">
+          <img src="./src/images/chair-minimalist.png" alt="Image 1">
+          <img class="desktop-image" src="./src/images/desktop-sofa.png" alt="Desktop Image">
+          <img class="mobile-image" src="./src/images/sofa-mobile.png" alt="Mobile Image">
 
-                        <div class="bestsellers__card bestsellers__card--hidden" >
-                            <picture>
-                                <!-- desktop -->
-                                <source srcset="./src/images/bestsellers-stand-desk@1x.jpg 1x, ./src/images/bestsellers-stand-desk@2x.jpg 2x" media="(min-width: 1440px)" type="image/jpeg"
-                                />
-                                <!-- tablet -->
-                                <source srcset="./src/images/bestsellers-stand-tablet@1x.jpg 1x, ./src/images/bestsellers-stand-tablet@2x.jpg 2x" media="(min-width: 768px)" type="image/jpeg"
-                                />
-                                <img src="./src/images/bestsellers-stand-desk@1x.jpg" alt="stand">
-                            </picture>
-                            <h2 class="bestsellers__card-title">The sleek stand</h2>
-                            <p class="bestsellers__card-subtitle">300$</p>
-                        </div>
-
-                        <div class="bestsellers__card bestsellers__card--hidden ">
-                            <picture>
-                                <!-- desktop -->
-                                <source srcset="./src/images/bestsellers-sofa-desk@1x.jpg 1x, ./src/images/bestsellers-sofa-desk@2x.jpg 2x" media="(min-width: 1440px)" type="image/jpeg"
-                                />
-                                <!-- tablet -->
-                                <source srcset="./src/images/bestsellers-sofa-tablet@1x.jpg 1x, ./src/images/bestsellers-sofa-tablet@2x.jpg 2x" media="(min-width: 768px)" type="image/jpeg"
-                                />
-                                <img src="./src/images/bestsellers-sofa-desk@1x.jpg" alt="sofa">
-                            </picture>
-                            <h2 class="bestsellers__card-title">The minimalist sofa</h2>
-                            <p class="bestsellers__card-subtitle">650$</p>
-                        </div>
-                    </div>
+        </div>
+        <div class="container-bookshelf">
+          <img src="./src/images/bookshelf-minimalist.png" alt="Image 2" class="mobile-image">
+          <p class="text-addition">Add a touch of elegance to your space with handcrafted furniture pieces</p>
+          <button class="button-subscribe">Subscribe</button>
+        </div>
+      </div>
+    </div>
+    <div class="about-us__wrraper">
+      <section class="container-large about-us">
+        <div class="about-us__background">
+          <div class="about-us__content">
+            <div class="about-us__text-container">
+              <div class="about-us__logo">
+                <img class="about-us__line" src="./src/icons/line.svg" alt="line" />
+                <p class="about-us__text">About us</p>
+              </div>
+              <h2 class="about-us__title">
+                Our craftsmanship: creating unique handmade furniture
+              </h2>
+              <p class="about-us__subtitle">
+                Discover the inspiration behind our modern and minimalist
+                designs, and see how we bring them to life through our skilled
+                craftsmanship.
+              </p>
+              <div class="about-us__items">
+                <div class="about-us__item">
+                  <p class="item__number">5+</p>
+                  <p class="item__subtitle">
+                    Years of experience creating handcrafted furniture
+                  </p>
                 </div>
-            </section>
-        </main>
-        <footer></footer>
-    </body>
+                <div class="about-us__item">
+                  <p class="item__number">100%</p>
+                  <p class="item__subtitle">
+                    Sustainably sourced materials used in all of our furniture
+                  </p>
+                </div>
+                <div class="about-us__item">
+                  <p class="item__number">500+</p>
+                  <p class="item__subtitle">
+                    Unique furniture designs crafted by our skilled artisans
+                  </p>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+        <picture class="about-us__img">
+          <!-- desktop -->
+          <source srcset="
+                      ./src/images/about-us-sofa-desk@1x.jpg 1x,
+                      ./src/images/about-us-sofa-desk@2x.jpg 2x
+                    " media="(min-width: 1440px)" type="image/jpeg" />
+          <!-- tablet -->
+
+          <source srcset="
+                      ./src/images/about-us-sofa-tab@1x.jpg 1x,
+                      ./src/images/about-us-sofa-tab@2x.jpg 2x
+                    " media="(min-width: 768px)" type="image/jpeg" />
+          <!-- mobile -->
+          <source srcset="
+                      ./src/images/about-us-sofa-mob@1x.jpg 1x,
+                      ./src/images/about-us-sofa-mob@2x.jpg 2x
+                    " media="(min-width: 300px)" type="image/jpeg" />
+          <img src="./src/images/about-us-sofa-mob@1x.jpg" alt="sofa" />
+        </picture>
+      </section>
+    </div>
+    <!-- section price -->
+    <section class="container price-section">
+      <hr class="price__item-line">
+      <div class="price__item">
+        <div class="price__item-text">
+          <span class="price__item-additional-line"></span>
+          <h2 class="price__item-title">Chairs</h2>
+          <p class="price__item-subtitle">from 200₴</p>
+        </div>
+      </div>
+      </div>
+      <hr class="price__item-line">
+      <div class="price__item">
+        <div class="price__item-text">
+          <span class="price__item-additional-line"></span>
+          <h2 class="price__item-title">Tables</h2>
+          <p class="price__item-subtitle">from 250₴</p>
+        </div>
+      </div>
+      <hr class="price__item-line">
+      <div class="price__item">
+        <div class="price__item-text">
+          <span class="price__item-additional-line"></span>
+          <h2 class="price__item-title">Dressers</h2>
+          <p class="price__item-subtitle">from 300₴</p>
+        </div>
+      </div>
+      <hr class="price__item-line">
+      <div class="price__item">
+        <div class="price__item-text">
+          <span class="price__item-additional-line"></span>
+          <h2 class="price__item-title">Sofas</h2>
+          <p class="price__item-subtitle">from 500₴</p>
+        </div>
+      </div>
+      <hr class="price__item-line">
+    </section>
+    <div class="container_fixed">
+      <h2 class="products-title">OUR PRODUCTS</h2>
+      <div class="multiple-items carousel">
+        <div>
+          <img src="images/mobile-nighstand.png" alt="nightstand" />
+          <p class="text-minimalist">Minimalist storage solutions</p>
+        </div>
+        <div>
+          <img src="images\mobile-sofa-products.png" alt="sofa" />
+          <p class="text-minimalist">Handcrafted minimalist seating</p>
+        </div>
+        <div>
+          <img src="images/table-mobile.png" alt="table" />
+          <p class="text-minimalist">Sleek and simple tables</p>
+        </div>
+        <div>
+          <img src="images/chair-mobile.png" alt="chair" />
+          <p class="text-minimalist">Minimalist seating for every space</p>
+        </div>
+      </div>
+      <div class="multiple-items2 carousel2">
+        <div>
+          <img src="images/nightstand-tablet.png" alt="nightstand" />
+          <p class="text-minimalist">Minimalist storage solutions</p>
+        </div>
+        <div>
+          <img src="images/sofa-tablet.png" alt="sofa" />
+          <p class="text-minimalist">Handcrafted minimalist seating</p>
+        </div>
+        <div>
+          <img src="images/table-tablet.png" alt="table" />
+          <p class="text-minimalist">Sleek and simple tables</p>
+        </div>
+        <div>
+          <img src="images/chair-tablet.png" alt="chair" />
+          <p class="text-minimalist">Minimalist seating for every space</p>
+        </div>
+      </div>
+      <div class="multiple-items3 carousel3">
+        <div>
+          <img src="images/nightstand-desktop.png" alt="nightstand" />
+          <p class="text-minimalist">Minimalist storage solutions</p>
+        </div>
+        <div>
+          <img src="images/sofa-desktop.png" alt="sofa" />
+          <p class="text-minimalist">Handcrafted minimalist seating</p>
+        </div>
+        <div>
+          <img src="images/tablet-desktop.png" alt="tablet" />
+          <p class="text-minimalist">Sleek and simple tables</p>
+        </div>
+        <div>
+          <img src="images/chair-mobile.png" alt="chair" />
+          <p class="text-minimalist">Minimalist seating for every space</p>
+        </div>
+        <div>
+          <img src="images\bedside-table.png" />
+          <p class="text-minimalist">Space all time</p>
+        </div>
+        <div>
+          <img src="images\sofa.png" />
+          <p class="text-minimalist">Realist rest</p>
+        </div>
+        <div>
+          <img src="images\table.png" />
+          <p class="text-minimalist">Modern and classic</p>
+        </div>
+        <div>
+          <img src="images\chair.png" />
+          <p class="text-minimalist">Comfortable always</p>
+        </div>
+      </div>
+    </div>
+    <!-- section bestsellers -->
+    <section class="bestsellers">
+      <h2 class="bestsellers__title">bestsellers</h2>
+      <div class="container bestsellers__block">
+        <div class="bestsellers__card--large">
+          <picture class="bestsellers__card-picture">
+            <!-- desktop -->
+            <source srcset="./src/images/bestsellers-bed-desk@1x.jpg 1x, ./src/images/bestsellers-bed-desk@2x.jpg 2x"
+              media="(min-width: 1440px)" type="image/jpeg" />
+            <!-- tablet -->
+            <source
+              srcset="./src/images/bestsellers-bed-tablet@1x.jpg 1x, ./src/images/bestsellers-bed-tablet@2x.jpg 2x"
+              media="(min-width: 768px)" type="image/jpeg" />
+            <!-- mobile -->
+            <source srcset="./src/images/bestsellers-bed-mob@1x.jpg 1x, ./src/images/bestsellers-bed-mob@2x.jpg 2x"
+              media="(max-width: 767px)" type="image/jpeg" />
+            <img src="./src/images/bestsellers-bed-desk@1x.jpg" alt="bed">
+          </picture>
+          <h2 class="bestsellers__card-title">The modern platform bed</h2>
+          <p class="bestsellers__card-subtitle">750$</p>
+        </div>
+        <div class="bestsellers__block-cards">
+          <div class="bestsellers__card">
+            <picture>
+              <!-- desktop -->
+              <source
+                srcset="./src/images/bestsellers-cozychairs-desk@1x.jpg 1x, ./src/images/bestsellers-cozychairs-desk@2x.jpg 2x"
+                media="(min-width: 1440px)" type="image/jpeg" />
+              <!-- tablet -->
+              <source
+                srcset="./src/images/bestsellers-cozychairs-tablet@1x.jpg 1x, ./src/images/bestsellers-cozychairs-tablet@2x.jpg 2x"
+                media="(min-width: 768px)" type="image/jpeg" />
+              <!-- mobile -->
+              <source
+                srcset="./src/images/bestsellers-cozychairs-mob@1x.jpg 1x, ./src/images/bestsellers-cozychairs-mob@2x.jpg 2x"
+                media="(max-width: 767px)" type="image/jpeg" />
+              <img src="./src/images/bestsellers-cozychairs-desk@1x.jpg" alt="chairs">
+            </picture>
+            <h2 class="bestsellers__card-title">The Cozy Lounge Chair</h2>
+            <p class="bestsellers__card-subtitle">230$</p>
+          </div>
+          <div class="bestsellers__card bestsellers__card-base">
+            <picture>
+              <!-- desktop -->
+              <source
+                srcset="./src/images/bestsellers-accentchair-desk@1x.jpg 1x, ./src/images/bestsellers-accentchair-desk@2x.jpg 2x"
+                media="(min-width: 1440px)" type="image/jpeg" />
+              <!-- tablet -->
+              <source
+                srcset="./src/images/bestsellers-accentchair-tablet@1x.jpg 1x, ./src/images/bestsellers-accentchair-tablet@2x.jpg 2x"
+                media="(min-width: 768px)" type="image/jpeg" />
+              <!-- mobile -->
+              <source
+                srcset="./src/images/bestsellers-accentchair-mob@1x.jpg 1x, ./src/images/bestsellers-accentchair-mob@2x.jpg 2x"
+                media="(max-width: 767px)" type="image/jpeg" />
+              <img src="./src/images/bestsellers-accentchair-desk@1x.jpg" alt="chair">
+            </picture>
+            <h2 class="bestsellers__card-title">The industrial accent chair</h2>
+            <p class="bestsellers__card-subtitle">250$</p>
+          </div>
+
+          <div class="bestsellers__card bestsellers__card--hidden">
+            <picture>
+              <!-- desktop -->
+              <source
+                srcset="./src/images/bestsellers-stand-desk@1x.jpg 1x, ./src/images/bestsellers-stand-desk@2x.jpg 2x"
+                media="(min-width: 1440px)" type="image/jpeg" />
+              <!-- tablet -->
+              <source
+                srcset="./src/images/bestsellers-stand-tablet@1x.jpg 1x, ./src/images/bestsellers-stand-tablet@2x.jpg 2x"
+                media="(min-width: 768px)" type="image/jpeg" />
+              <img src="./src/images/bestsellers-stand-desk@1x.jpg" alt="stand">
+            </picture>
+            <h2 class="bestsellers__card-title">The sleek stand</h2>
+            <p class="bestsellers__card-subtitle">300$</p>
+          </div>
+
+          <div class="bestsellers__card bestsellers__card--hidden ">
+            <picture>
+              <!-- desktop -->
+              <source
+                srcset="./src/images/bestsellers-sofa-desk@1x.jpg 1x, ./src/images/bestsellers-sofa-desk@2x.jpg 2x"
+                media="(min-width: 1440px)" type="image/jpeg" />
+              <!-- tablet -->
+              <source
+                srcset="./src/images/bestsellers-sofa-tablet@1x.jpg 1x, ./src/images/bestsellers-sofa-tablet@2x.jpg 2x"
+                media="(min-width: 768px)" type="image/jpeg" />
+              <img src="./src/images/bestsellers-sofa-desk@1x.jpg" alt="sofa">
+            </picture>
+            <h2 class="bestsellers__card-title">The minimalist sofa</h2>
+            <p class="bestsellers__card-subtitle">650$</p>
+          </div>
+        </div>
+      </div>
+    </section>
+    <section class="container wrapper-newsletter">
+      <div class="container_newsletter">
+        <div>
+          <p class="title-newsletter">Newsletter</p>
+          <div class="container-design">
+            <p class="text-newsletter">Every week we will send you new designs and information about sales.</p>
+            <div>
+              <form>
+                <div class="input-container">
+                  <input type="text" placeholder="Name" class="form-newsletter">
+                </div>
+              </form>
+              <form>
+                <div class="input-container">
+                  <input type="email" placeholder="E-mail" class="form-newsletter email-input">
+                  <div class="validation-icon">
+                    <img src="images\error.png" alt="icon error" />
+                  </div>
+                </div>
+              </form>
+            </div>
+            <div class="container-checkbox">
+              <label>
+                <input type="checkbox" class="checkbox" />
+              </label>
+              <p class="text-agree">Agree to subscribe to the newsletter</p>
+            </div>
+            <button type="button" class="button-send">Send</button>
+          </div>
+        </div>
+        <img src="images\img-newsletter.png" alt="photo-newsletter" class="img-newsletter" />
+      </div>
+    </section>
+  </main>
+  <footer class="footer">
+    <div class="footer__container">
+      <img class="footer__logo" src="./src/icons/logo.svg" alt="logo" />
+      <div class="footer__socials-media">
+        <!-- mobile -->
+        <img class="socials-media__link--mob" src="./src/icons/facebook-mob.svg" alt="facebook" />
+        <img class="socials-media__link--mob" src="./src/icons/instagram-mob.svg" alt="instagram" />
+        <img class="socials-media__link--mob" src="./src/icons/youtube-mob.svg" alt="youtube" />
+        <!-- tablet -->
+        <img class="socials-media__link--tab" src="./src/icons/facebook.svg" alt="facebook" />
+        <img class="socials-media__link--tab" src="./src/icons/instagram.svg" alt="instagram" />
+        <img class="socials-media__link--tab" src="./src/icons/youtube.svg" alt="youtube" />
+      </div>
+    </div>
+    <ul class="footer__list">
+      <li class="list__item">About us</li>
+      <li class="list__item">Our products</li>
+      <li class="list__item">Prices</li>
+      <li class="list__item">Bestsellers</li>
+      <li class="list__item">Reviews</li>
+    </ul>
+    <div class="footer__flex-container">
+      <div class="footer__details">
+        <p class="details__item">Obolonsky Prospect, 14, Kyiv</p>
+        <p class="details__item">Daily 10:00-21:00</p>
+      </div>
+      <div class="footer__contacts">
+        <p class="footer__number">+380669384758</p>
+        <p class="footer__number">+380679384758</p>
+      </div>
+      <p class="footer__post">minimal.furniture@gmail.com</p>
+    </div>
+    <p class="footer__info">
+      By using this website, you agree to the
+      <span class="footer__info--underline">Terms of Service</span> and
+      <span class="footer__info--underline">Privacy Policy</span>
+    </p>
+  </footer>
+</body>
+<script type="text/javascript" src="https://code.jquery.com/jquery-1.11.0.js"></script>
+<script type="text/javascript" src="https://cdn.jsdelivr.net/jquery.slick/1.5.0/slick.min.js"></script>
+<script type="text/javascript">
+  $(document).ready(function () {
+    $(".multiple-items").slick({
+      dots: false,
+      arrows: false,
+      infinite: true,
+      speed: 300,
+      slidesToShow: 1,
+      adaptiveHeight: true
+    });
+  });
+</script>
+<script type="text/javascript">
+  $(document).ready(function () {
+    $(".multiple-items2").slick({
+      infinite: true,
+      dots: false,
+      arrows: false,
+      slidesToShow: 2,
+      slidesToScroll: 1
+    });
+  });
+</script>
+<script type="text/javascript">
+  $(document).ready(function () {
+    $(".multiple-items3").slick({
+      infinite: true,
+      dots: false,
+      arrows: false,
+      slidesToShow: 4,
+      slidesToScroll: 4
+    });
+  });
+</script>
+</body>
+
 </html>
