@@ -162,6 +162,7 @@ input[type=checkbox]:checked ~ label .header-menu__linebox .header-menu__line4 {
 @media (min-width: 768px) {
   .header {
     height: 95px;
+    margin-bottom: 64px;
   }
   .header-menu__linebox {
     height: 20px;
@@ -263,6 +264,10 @@ input[type=checkbox]:checked ~ label .header-menu__linebox .header-menu__line4 {
     display: none;
   }
 }
+.container_fixed {
+  margin-bottom: 64px;
+}
+
 .products-title {
   font-family: Roboto;
   font-size: 32px;
@@ -271,15 +276,11 @@ input[type=checkbox]:checked ~ label .header-menu__linebox .header-menu__line4 {
   letter-spacing: 0em;
   text-align: center;
   color: #0a224a;
-}
-
-.container_fixed {
-  margin-top: 100px;
+  margin-bottom: 33px;
 }
 
 .carousel {
   width: 343px;
-  padding-top: 50px;
   margin: 0 auto;
 }
 
@@ -298,6 +299,12 @@ input[type=checkbox]:checked ~ label .header-menu__linebox .header-menu__line4 {
 }
 
 @media (min-width: 768px) {
+  .container_fixed {
+    margin-bottom: 100px;
+  }
+  .products-title {
+    margin-bottom: 30px;
+  }
   .carousel2 {
     display: block;
     width: 675px;
@@ -444,12 +451,10 @@ input[type=checkbox]:checked ~ label .header-menu__linebox .header-menu__line4 {
     width: 300px;
   }
 }
-.price {
-  margin-bottom: 64px;
-}
 .wrapper-newsletter {
   display: flex;
   justify-content: center;
+  margin-bottom: 64px;
 }
 
 .container_newsletter {
@@ -457,7 +462,6 @@ input[type=checkbox]:checked ~ label .header-menu__linebox .header-menu__line4 {
   display: flex;
   flex-direction: column;
   gap: 30px;
-  padding-top: 40px;
 }
 
 .title-newsletter {
@@ -469,6 +473,7 @@ input[type=checkbox]:checked ~ label .header-menu__linebox .header-menu__line4 {
   text-align: center;
   color: #0a224a;
   text-transform: uppercase;
+  margin-bottom: 20px;
 }
 
 .text-newsletter {
@@ -507,6 +512,9 @@ input[type=checkbox]:checked ~ label .header-menu__linebox .header-menu__line4 {
 }
 
 @media (min-width: 768px) {
+  .wrapper-newsletter {
+    margin-bottom: 100px;
+  }
   .container_newsletter {
     width: auto;
     height: auto;
@@ -515,6 +523,7 @@ input[type=checkbox]:checked ~ label .header-menu__linebox .header-menu__line4 {
     font-size: 32px;
     line-height: 45px;
     text-align: left;
+    margin-bottom: 30px;
   }
   .text-newsletter {
     font-size: 18px;
@@ -529,6 +538,9 @@ input[type=checkbox]:checked ~ label .header-menu__linebox .header-menu__line4 {
   }
 }
 @media (min-width: 1440px) {
+  .wrapper-newsletter {
+    margin-bottom: 86px;
+  }
   .container_newsletter {
     width: 1096px;
     display: flex;
@@ -572,7 +584,7 @@ input {
 }
 
 input:invalid {
-  border: 1px solid #E74A3B;
+  border: 1px solid #e74a3b;
 }
 
 .input-container .validation-icon {
@@ -587,6 +599,9 @@ input:invalid {
   display: inline-block;
 }
 
+.price {
+  margin-bottom: 64px;
+}
 .price__item {
   margin: 30px 0;
 }
@@ -899,6 +914,9 @@ input:invalid {
     margin-left: 82px;
   }
 }
+.about-us__wrraper {
+  margin-bottom: 64px;
+}
 .about-us__background {
   background: #f7faff;
   width: 100%;
@@ -954,6 +972,9 @@ input:invalid {
   margin-top: 14px;
 }
 @media (min-width: 768px) {
+  .about-us__wrraper {
+    margin-bottom: 100px;
+  }
   .about-us__background {
     background: none;
     width: 704px;

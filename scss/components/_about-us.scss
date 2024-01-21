@@ -1,4 +1,10 @@
 .about-us {
+
+  // margin bottom 
+  &__wrraper {
+    margin-bottom: 64px;
+  }
+
   @extend %flex;
   &__background {
     background: $backgroundColor;
@@ -74,6 +80,12 @@
 
 @media (min-width: 768px) {
   .about-us {
+
+    // margin bottom 
+    &__wrraper {
+      margin-bottom: 100px;
+    }
+
     &__background {
       background: none;
       width: 704px;
