@@ -37,7 +37,9 @@
 }
 
 input[type="checkbox"]:checked ~ .burger-menu__block {
-  opacity: 1;
+  display: flex;
+  align-items: center;
+  flex-direction: column;
 }
 
 // line 1
