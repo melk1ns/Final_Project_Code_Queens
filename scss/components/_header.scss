@@ -1,0 +1,277 @@
+.header {
+  @extend %flex;
+
+  position: relative;
+  z-index: 99;
+  flex-direction: row;
+  height: 88px;
+  background-color: $backgroundColor;
+
+  &__block {
+    @extend %flex;
+
+    flex-direction: row;
+    justify-content: space-between;
+  }
+
+  &-nav {
+    display: none;
+  }
+
+  &-menu__linebox {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: center;
+    height: 22px;
+  }
+
+  &-menu__line {
+    background-color: $primaryColor;
+
+    display: block;
+    width: 30px;
+    height: 3px;
+    border-radius: round($number: 24px);
+  }
+}
+
+input[type="checkbox"]:checked ~ .burger-menu__block {
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+}
+
+// line 1
+
+input[type="checkbox"]:checked
+  ~ label
+  .header-menu__linebox
+  .header-menu__line1 {
+  -webkit-animation: line1 1s linear forwards alternate;
+  animation: line1 1s linear forwards alternate;
+}
+
+@-webkit-keyframes line1 {
+  80% {
+    transform: translateY(10px);
+  }
+
+  100% {
+    transform: translateY(0px) rotate(-45deg);
+  }
+}
+
+@keyframes line1 {
+  80% {
+    transform: translateY(10px);
+  }
+
+  100% {
+    transform: translateY(0px) rotate(-45deg);
+  }
+}
+
+.header-menu__line1 {
+  transform-origin: bottom right;
+}
+
+// line 2
+
+input[type="checkbox"]:checked
+  ~ label
+  .header-menu__linebox
+  .header-menu__line2 {
+  -webkit-animation: line2 1s linear forwards alternate;
+  animation: line2 1s linear forwards alternate;
+}
+
+@-webkit-keyframes line2 {
+  0% {
+    transform: translateY(0px);
+    opacity: 1;
+  }
+
+  50% {
+    opacity: 0.5;
+  }
+
+  100% {
+    transform: translateY(4px);
+    opacity: 0;
+    display: none;
+  }
+}
+
+@keyframes line2 {
+  0% {
+    transform: translateY(0px);
+    opacity: 1;
+  }
+
+  50% {
+    opacity: 0.5;
+  }
+
+  100% {
+    transform: translateY(4px);
+    opacity: 0;
+    display: none;
+  }
+}
+
+// line 3
+
+input[type="checkbox"]:checked
+  ~ label
+  .header-menu__linebox
+  .header-menu__line3 {
+  -webkit-animation: line3 1s linear forwards alternate;
+  animation: line3 1s linear forwards alternate;
+}
+
+@-webkit-keyframes line3 {
+  0% {
+    transform: translateY(0px);
+    opacity: 1;
+  }
+
+  50% {
+    opacity: 0.5;
+  }
+
+  100% {
+    transform: translateY(-4px);
+    opacity: 0;
+    display: none;
+  }
+}
+
+@keyframes line3 {
+  0% {
+    transform: translateY(0px);
+    opacity: 1;
+  }
+
+  50% {
+    opacity: 0.5;
+  }
+
+  100% {
+    transform: translateY(-4px);
+    opacity: 0;
+    display: none;
+  }
+}
+
+// line 4
+
+input[type="checkbox"]:checked
+  ~ label
+  .header-menu__linebox
+  .header-menu__line4 {
+  -webkit-animation: line4 1s linear forwards alternate;
+  animation: line4 1s linear forwards alternate;
+}
+
+@-webkit-keyframes line4 {
+  80% {
+    transform: translateY(-10px);
+  }
+
+  100% {
+    transform: translateY(2.2px) rotate(45deg);
+  }
+}
+
+@keyframes line4 {
+  80% {
+    transform: translateY(-10px);
+  }
+
+  100% {
+    transform: translateY(2.2px) rotate(45deg);
+  }
+}
+
+.header-menu__line4 {
+  transform-origin: bottom right;
+}
+
+#header-menu__toggle {
+  display: none;
+}
+
+.logo-desk {
+  display: none;
+}
+
+@media (min-width: 768px) {
+  .header {
+    height: 95px;
+
+    &-menu__linebox {
+      height: 20px;
+    }
+  }
+
+  input[type="checkbox"]:checked
+    ~ label
+    .header-menu__linebox
+    .header-menu__line4 {
+    -webkit-animation: line4-tablet 1s linear forwards alternate;
+    animation: line4-tablet 1s linear forwards alternate;
+  }
+}
+
+@keyframes line4-tablet {
+  80% {
+    transform: translateY(-10px);
+  }
+
+  100% {
+    transform: translateY(4px) rotate(45deg);
+  }
+}
+
+@media (min-width: 1440px) {
+  .header {
+    position: static;
+
+    &-nav {
+      display: flex;
+
+      &__list {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+
+        list-style: none;
+        width: 621px;
+        margin: 8px;
+      }
+
+      &__item {
+        text-decoration: none;
+        color: $primaryColor;
+        font-family: "Roboto", sans-serif;
+        font-size: 18px;
+        font-style: normal;
+        font-weight: 400;
+        line-height: 27px;
+      }
+    }
+
+    &-menu {
+      display: none;
+    }
+  }
+
+  .logo-desk {
+    display: block;
+  }
+
+  .logo-mob {
+    display: none;
+  }
+}

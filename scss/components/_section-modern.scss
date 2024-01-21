@@ -71,7 +71,7 @@
   .container-img {
     display: flex;
     align-items: flex-end;
-    gap: 20px;
+    gap: 25px;
   }
 
   .container-minimalist {
@@ -111,6 +111,7 @@
 
   .container-minimalist {
     flex-direction: row;
+    gap: 25px;
   }
 
   .container-bookshelf {
