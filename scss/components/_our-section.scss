@@ -1,6 +1,7 @@
 .container_fixed {
   margin-bottom: 64px;
 }
+
 .products-title {
   font-family: Roboto;
   font-size: 32px;
@@ -11,6 +12,7 @@
   color: $primaryColor;
   margin-bottom: 33px;
 }
+
 .carousel {
   width: 343px;
   margin: 0 auto;
@@ -30,17 +32,18 @@
   gap: 10px;
 }
 
-@media (min-width:768px) {
+@media (min-width: 768px) {
   .container_fixed {
     margin-bottom: 100px;
   }
+
   .products-title {
     margin-bottom: 30px;
   }
+
   .carousel2 {
     display: block;
     width: 675px;
-
   }
 
   .carousel {
@@ -52,7 +55,7 @@
   display: none;
 }
 
-@media (min-width:1440px) {
+@media (min-width: 1440px) {
   .carousel3 {
     display: block;
     width: 1320px;

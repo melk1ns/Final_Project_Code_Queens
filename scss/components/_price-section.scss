@@ -1,6 +1,4 @@
 .price {
-
-  
   margin-bottom: 64px;
 
   &__item {
@@ -63,6 +61,7 @@
 @media (min-width: 768px) {
   .price {
     margin-bottom: 100px;
+
     &__item {
       &-title {
         font-size: 32px;
