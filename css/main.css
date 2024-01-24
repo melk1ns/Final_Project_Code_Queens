@@ -1,3 +1,115 @@
+.clients-reviews__title {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+}
+
+.clients-reviews__title {
+  font-family: Roboto;
+  font-size: 32px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: 45px;
+  text-transform: uppercase;
+}
+
+.clients-reviews .item__text, .clients-reviews .item__subtitle {
+  font-family: Roboto;
+  font-size: 18px;
+  font-style: normal;
+  font-weight: 400;
+}
+
+.clients-reviews {
+  width: 100%;
+  background: #f7faff;
+}
+.clients-reviews__title {
+  color: #0a224a;
+  text-transform: uppercase;
+  margin-bottom: 30px;
+  padding-top: 60px;
+}
+.clients-reviews__carousel {
+  display: flex;
+  gap: 16px;
+  justify-content: center;
+}
+.clients-reviews__item {
+  width: 343px;
+  background: #fff;
+  border-radius: 8px;
+  margin: 0 auto;
+}
+.clients-reviews__overhead-part {
+  display: flex;
+  padding-left: 24px;
+  padding-top: 24px;
+  margin-bottom: 24px;
+}
+.clients-reviews__image {
+  margin-right: 14px;
+}
+.clients-reviews .item__title {
+  color: #0a224a;
+  font-size: 18px;
+  font-style: normal;
+  font-weight: 700;
+  line-height: 32px;
+  text-transform: uppercase;
+}
+.clients-reviews .item__subtitle {
+  color: #0a224a;
+  text-align: center;
+  font-size: 14px;
+  line-height: 18px;
+  display: flex;
+}
+.clients-reviews .item__text {
+  color: #0a224a;
+  font-family: "Roboto";
+  font-size: 14px;
+  line-height: 20px;
+  width: 296px;
+  margin: 0 auto;
+  padding-bottom: 24px;
+}
+
+@media (min-width: 768px) {
+  .clients-reviews__item--head {
+    margin-bottom: 18px;
+  }
+  .clients-reviews .item__text {
+    font-size: 18px;
+    font-weight: 400;
+    line-height: 27px;
+  }
+  .clients-reviews .slick-track {
+    gap: 16px;
+    display: flex;
+  }
+}
+@media (min-width: 1440px) {
+  .clients-reviews__carousel {
+    gap: 24px;
+    padding-bottom: 60px;
+  }
+  .clients-reviews__item {
+    width: 424px;
+    margin: 0;
+  }
+  .clients-reviews__item--head {
+    margin-bottom: 20px;
+  }
+  .clients-reviews .item__text {
+    width: 360px;
+    padding-bottom: 32px;
+  }
+  .clients-reviews .slick-track {
+    gap: 23px;
+  }
+}
 * {
   box-sizing: border-box;
   font-family: "Roboto", sans-serif;
