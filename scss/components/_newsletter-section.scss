@@ -1,13 +1,13 @@
-.wrapper-newsletter{
-display: flex;
-justify-content: center;
+.wrapper-newsletter {
+  display: flex;
+  justify-content: center;
+  margin-bottom: 64px;
 }
 .container_newsletter {
   width: 343px;
   display: flex;
   flex-direction: column;
   gap: 30px;
-  padding-top: 40px;
 }
 
 .title-newsletter {
@@ -19,6 +19,7 @@ justify-content: center;
   text-align: center;
   color: $primaryColor;
   text-transform: uppercase;
+  margin-bottom: 20px;
 }
 
 .text-newsletter {
@@ -34,13 +35,12 @@ justify-content: center;
 .form-newsletter {
   width: 343px;
   height: 50px;
-  border: 1px solid  $greyColor ;
+  border: 1px solid $greyColor;
 }
 
 .container-checkbox {
   display: flex;
   gap: 10px;
-
 }
 
 .container-design {
@@ -52,12 +52,15 @@ justify-content: center;
 .button-send {
   width: 224px;
   height: 50px;
-  background:$primaryColor;
-  color:$secondaryColor;
+  background: $primaryColor;
+  color: $secondaryColor;
   border: none;
 }
 
-@media (min-width:768px) {
+@media (min-width: 768px) {
+  .wrapper-newsletter {
+    margin-bottom: 100px;
+  }
   .container_newsletter {
     width: auto;
     height: auto;
@@ -67,6 +70,7 @@ justify-content: center;
     font-size: 32px;
     line-height: 45px;
     text-align: left;
+    margin-bottom: 30px;
   }
 
   .text-newsletter {
@@ -84,7 +88,11 @@ justify-content: center;
   }
 }
 
-@media (min-width:1440px) {
+@media (min-width: 1440px) {
+  .wrapper-newsletter {
+    margin-bottom: 86px;
+  }
+
   .container_newsletter {
     width: 1096px;
     display: flex;
@@ -129,12 +137,10 @@ justify-content: center;
 
 input {
   padding: 10px;
-
 }
 
 input:invalid {
-  border: 1px solid #E74A3B;
-
+  border: 1px solid #e74a3b;
 }
 
 .input-container .validation-icon {
@@ -145,6 +151,6 @@ input:invalid {
   display: none;
 }
 
-.email-input:invalid+.validation-icon {
+.email-input:invalid + .validation-icon {
   display: inline-block;
 }
