@@ -209,6 +209,7 @@ input[type="checkbox"]:checked
 @media (min-width: 768px) {
   .header {
     height: 95px;
+    margin-bottom: 64px;
 
     &-menu__linebox {
       height: 20px;
