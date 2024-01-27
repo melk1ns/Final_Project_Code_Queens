@@ -1040,6 +1040,11 @@ input:invalid {
   text-decoration: underline;
 }
 
+.list__item {
+  text-decoration: none;
+  color: #fff;
+}
+
 @media (min-width: 768px) {
   .footer__logo {
     margin-top: 48px;
