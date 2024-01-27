@@ -87,6 +87,11 @@
   }
 }
 
+.list__item {
+  text-decoration: none;
+  color: $secondaryColor;
+}
+
 @media (min-width: 768px) {
   .footer {
     &__logo {
