@@ -1,7 +1,7 @@
 .clients-reviews {
   width: 100%;
   background: $backgroundColor;
-  margin-bottom: 64px;
+  padding-bottom: 64px;
 
   &__title {
     @extend %title-font;

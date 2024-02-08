@@ -889,7 +889,7 @@ input:invalid {
 .clients-reviews {
   width: 100%;
   background: #f7faff;
-  margin-bottom: 64px;
+  padding-bottom: 64px;
 }
 .clients-reviews__title {
   color: #0a224a;
